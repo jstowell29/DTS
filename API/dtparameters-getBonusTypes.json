@@ -1,0 +1,50 @@
+{
+  "id": "dtparameters-getBonusTypes",
+  "name": "DtParameters.getBonusTypes",
+  "description": "Bonus types available for a specified period. If no period is specified it will return information for the default period and PB.",
+  "inputs": [
+    {
+      "fieldname": "period_date",
+      "type": "Numeric",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "period_type",
+      "type": "String",
+      "notes": "PB for primary bonus, SB for secondary bonus, TB for tertiary bonus"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "comm_desc",
+      "type": "String",
+      "notes": "Bonus type description"
+    },
+    {
+      "fieldname": "com_amount",
+      "type": "Numeric",
+      "notes": "Bonus payout amount"
+    },
+    {
+      "fieldname": "com_count",
+      "type": "Numeric",
+      "notes": "Number of people receiving bonus type"
+    },
+    {
+      "fieldname": "period_type",
+      "type": "String",
+      "notes": "PB for primary bonus, SB for secondary bonus, TB for tertiary bonus"
+    },
+    {
+      "fieldname": "pv_date",
+      "type": "Numeric",
+      "notes": "Volume period date (YYYYMM)"
+    },
+    {
+      "fieldname": "sequential",
+      "type": "Numeric",
+      "notes": "Numerical representation of bonus type"
+    }
+  ],
+  "url": "http://dts.myvoffice.com/clientname/dts/index.cfm;jsessionid=**SESSIONID**?service=DTParameters.getBonusTypes&apikey=**APIKEY**&PERIOD_DATE=201401&PERIOD_TYPE=PB&format=JSON"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "messagebox-getMessageList",
+  "name": "MessageBox.getMessageList",
+  "description": "If run in detail mode returns entire message list for a user. If not run in detail mode then returns summary information of mailbox",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valid values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "detail",
+      "type": "Numeric",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Which message number to start at"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many records to return at a time"
+    },
+    {
+      "fieldname": "selection",
+      "type": "String",
+      "notes": "Always set this to "
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "Message ID when run in detail mode"
+    },
+    {
+      "fieldname": "days",
+      "type": "Numeric",
+      "notes": "How many days to include of messages"
+    },
+    {
+      "fieldname": "tVersion",
+      "type": "String",
+      "notes": "Always set to "
+    },
+    {
+      "fieldname": "showNonMessages",
+      "type": "String",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "ID of message Box To Use"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "archFax",
+      "type": "Numeric",
+      "notes": "How many archived faxes"
+    },
+    {
+      "fieldname": "archive",
+      "type": "Numeric",
+      "notes": "How may archived messages"
+    },
+    {
+      "fieldname": "new",
+      "type": "Numeric",
+      "notes": "How many new messages"
+    },
+    {
+      "fieldname": "newFax",
+      "type": "Numeric",
+      "notes": "How many new Faxes"
+    },
+    {
+      "fieldname": "noMsg",
+      "type": "Numeric",
+      "notes": "How many calls to the box, but no messages left"
+    },
+    {
+      "fieldname": "saved",
+      "type": "Numeric",
+      "notes": "How many saved messages"
+    },
+    {
+      "fieldname": "savfax",
+      "type": "Numeric",
+      "notes": "how many saved faxes"
+    },
+    {
+      "fieldname": "stat",
+      "type": "String",
+      "notes": "Status of "
+    },
+    {
+      "fieldname": "urgnt",
+      "type": "Numeric",
+      "notes": "How many urgent messages"
+    }
+  ]
+}

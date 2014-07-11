@@ -1,0 +1,19 @@
+{
+  "id": "genealogy-testIsInDownline",
+  "name": "Genealogy.testIsInDownline",
+  "description": "Tests if a person is in the current sessions user's downline",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

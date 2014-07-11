@@ -1,0 +1,199 @@
+{
+  "id": "earnings-getEarningsDetail",
+  "name": "Earnings.getEarningsDetail",
+  "description": "Returns Earnings Information For a single earnings record",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "checkType",
+      "type": "String",
+      "notes": "PB for Primary Bonus SB for Secondary Bonus MA and MB are Manual checks Default is PB"
+    },
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "Volume Period date YYYYPP"
+    },
+    {
+      "fieldname": "transactionId",
+      "type": "Numeric",
+      "notes": "Earnings Transaction ID taken from Earnings Summary service"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "beg_date",
+      "type": "String",
+      "notes": "Beginning Date Of Earnings"
+    },
+    {
+      "fieldname": "check_number",
+      "type": "Numeric",
+      "notes": "Check Number"
+    },
+    {
+      "fieldname": "check_type",
+      "type": "String",
+      "notes": "Check Type"
+    },
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "3 Letter Country Code"
+    },
+    {
+      "fieldname": "currency_code",
+      "type": "String",
+      "notes": "3 Letter Currency Code"
+    },
+    {
+      "fieldname": "disbursement_type",
+      "type": "String",
+      "notes": "Type of Disbursement (Numerical Representation)"
+    },
+    {
+      "fieldname": "display_name_1",
+      "type": "String",
+      "notes": "User Display Name"
+    },
+    {
+      "fieldname": "display_name_2",
+      "type": "String",
+      "notes": "User Display Name 2"
+    },
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "dst_addr",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "dst_addr_2",
+      "type": "String",
+      "notes": "Suite or Apartment Number"
+    },
+    {
+      "fieldname": "dst_addr_3",
+      "type": "String",
+      "notes": "City, State Zip"
+    },
+    {
+      "fieldname": "dst_addr_4",
+      "type": "String",
+      "notes": "Misc. Address Field"
+    },
+    {
+      "fieldname": "dst_city",
+      "type": "String",
+      "notes": "City, State Zip"
+    },
+    {
+      "fieldname": "dst_country_code",
+      "type": "String",
+      "notes": "3 Letter Country code"
+    },
+    {
+      "fieldname": "dst_postal_code",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "dst_state",
+      "type": "String",
+      "notes": "2 Letter State Code"
+    },
+    {
+      "fieldname": "earnings_amount",
+      "type": "Numeric",
+      "notes": "Amount Earned"
+    },
+    {
+      "fieldname": "end_date",
+      "type": "Numeric",
+      "notes": "End Date of Earnings Period"
+    },
+    {
+      "fieldname": "enroller_id",
+      "type": "Numeric",
+      "notes": "Distributor's Enroller ID"
+    },
+    {
+      "fieldname": "gv",
+      "type": "Numeric",
+      "notes": "This is vol2 from the volume period"
+    },
+    {
+      "fieldname": "native_name_1",
+      "type": "String",
+      "notes": "Native Name 1"
+    },
+    {
+      "fieldname": "native_name_2",
+      "type": "String",
+      "notes": "Native Name 2"
+    },
+    {
+      "fieldname": "paid_rank",
+      "type": "Numeric",
+      "notes": "Paid Rank Numerical Value"
+    },
+    {
+      "fieldname": "paid_rank_name",
+      "type": "String",
+      "notes": "Paid Rank Name"
+    },
+    {
+      "fieldname": "perm_rank",
+      "type": "Numeric",
+      "notes": "PIN or End Rank"
+    },
+    {
+      "fieldname": "perm_rank_name",
+      "type": "String",
+      "notes": "PIN or End Rank Name"
+    },
+    {
+      "fieldname": "pv",
+      "type": "Numeric",
+      "notes": "vol1 from volume period"
+    },
+    {
+      "fieldname": "pv_date",
+      "type": "Numeric",
+      "notes": "Volume Period (Format YYYYMM)"
+    },
+    {
+      "fieldname": "roman_name_1",
+      "type": "String",
+      "notes": "Roman Name 1"
+    },
+    {
+      "fieldname": "roman_name_2",
+      "type": "String",
+      "notes": "Roman Name 2"
+    },
+    {
+      "fieldname": "sponsor_dist_id",
+      "type": "Numeric",
+      "notes": "Distributor's Sponsor ID"
+    },
+    {
+      "fieldname": "transaction_number",
+      "type": "Numeric",
+      "notes": "Earnings Transaction Number Assigned By DataTrax"
+    },
+    {
+      "fieldname": "transaction_seq",
+      "type": "Numeric",
+      "notes": "Sequence number of all earnings"
+    }
+  ]
+}

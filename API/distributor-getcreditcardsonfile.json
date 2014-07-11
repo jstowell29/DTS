@@ -1,0 +1,104 @@
+{
+  "id": "distributor-getcreditcardsonfile",
+  "name": "Distributor.getCreditCardsOnFile",
+  "description": "This will return all credit cards on file for a particular distributor.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "This is the sequence of the cards saved on file. If left blank, all cards will be returned."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "addr1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "addr2",
+      "type": "String",
+      "notes": "Apartment or Suite #"
+    },
+    {
+      "fieldname": "addr3",
+      "type": "String",
+      "notes": "City, State and Postal Code"
+    },
+    {
+      "fieldname": "addr4",
+      "type": "String",
+      "notes": "Misc Address Field"
+    },
+    {
+      "fieldname": "auto_renewal",
+      "type": "String",
+      "notes": "Flag that is set if the card is available for auto-renewal"
+    },
+    {
+      "fieldname": "cc_exp_mm",
+      "type": "Numeric",
+      "notes": "2 digit month"
+    },
+    {
+      "fieldname": "cc_exp_yy",
+      "type": "Numeric",
+      "notes": "4 digit year"
+    },
+    {
+      "fieldname": "cc_type",
+      "type": "String",
+      "notes": "Credit Card Type "
+    },
+    {
+      "fieldname": "cc_type_desc",
+      "type": "String",
+      "notes": "Type of Credit Card (Visa, MasterCard, etc)"
+    },
+    {
+      "fieldname": "check_cc_account",
+      "type": "Numeric",
+      "notes": "Credit Card Number"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "City Field"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "State Field"
+    },
+    {
+      "fieldname": "postal_code",
+      "type": "Numeric",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "Personal description of card"
+    },
+    {
+      "fieldname": "name_on_card",
+      "type": "String",
+      "notes": "Name On Credit Card"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Sequence of all cards on file"
+    },
+    {
+      "fieldname": "used_for_autoship",
+      "type": "Boolean",
+      "notes": "Flag set if used for autoship"
+    }
+  ]
+}

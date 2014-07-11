@@ -1,0 +1,39 @@
+{
+  "id": "group-getDefaultPhoto",
+  "name": "Group.getDefaultPhoto",
+  "description": "Get the default group photo url",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corporate Id? Yes or no, default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "groups",
+      "type": "Array",
+      "notes": "Array of all groups photo url and name for a user"
+    },
+    {
+      "fieldname": "link",
+      "type": "String",
+      "notes": "URL of photo"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of photo file"
+    }
+  ]
+}

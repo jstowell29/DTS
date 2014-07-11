@@ -1,0 +1,24 @@
+{
+  "id": "earnings-getPeriods",
+  "name": "Earnings.getPeriods",
+  "description": "Returns a list of volume periods by bonus type (PB, SB, etc)",
+  "inputs": [
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "PB for Primary Bonus SB for Secondary Bonus (default is PB)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "label",
+      "type": "String",
+      "notes": "Name of period"
+    },
+    {
+      "fieldname": "period",
+      "type": "Numeric",
+      "notes": "Volume Period Date (YYYYMM)"
+    }
+  ]
+}

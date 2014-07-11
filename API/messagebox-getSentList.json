@@ -1,0 +1,124 @@
+{
+  "id": "messagebox-getSentList",
+  "name": "MessageBox.getSentList",
+  "description": "Returns list of member IDs associated with a sent message",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "Must be provided to run in detail mode"
+    },
+    {
+      "fieldname": "detail",
+      "type": "String",
+      "notes": "filter the sent list based on SentTo, Blocked, Opened, Attached, No, Yes"
+    },
+    {
+      "fieldname": "days",
+      "type": "Numeric",
+      "notes": "This defaults to 10. This is the number of days to include"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "aOpened",
+      "type": "Numeric",
+      "notes": "How many have been opened"
+    },
+    {
+      "fieldname": "blocked",
+      "type": "Numeric",
+      "notes": "How many messages were blocked"
+    },
+    {
+      "fieldname": "date",
+      "type": "Numeric",
+      "notes": "Date broadcast was sent"
+    },
+    {
+      "fieldname": "dups",
+      "type": "Numeric",
+      "notes": "How many duplicates were sent"
+    },
+    {
+      "fieldname": "expire",
+      "type": "Numeric",
+      "notes": "Date the message expires"
+    },
+    {
+      "fieldname": "expired",
+      "type": "Numeric",
+      "notes": "Date broadcast expired"
+    },
+    {
+      "fieldname": "fId",
+      "type": "Numeric",
+      "notes": "ID of person sent broadcast"
+    },
+    {
+      "fieldname": "fMsg",
+      "type": "Numeric",
+      "notes": "Message ID"
+    },
+    {
+      "fieldname": "fxMsgTyp",
+      "type": "String",
+      "notes": "Fax Message Type"
+    },
+    {
+      "fieldname": "media",
+      "type": "String",
+      "notes": "Attached Media information"
+    },
+    {
+      "fieldname": "msgTyp",
+      "type": "String",
+      "notes": "Message Type "
+    },
+    {
+      "fieldname": "opened",
+      "type": "Numeric",
+      "notes": "How many times opened"
+    },
+    {
+      "fieldname": "sent",
+      "type": "Numeric",
+      "notes": "How many sent"
+    },
+    {
+      "fieldname": "title",
+      "type": "String",
+      "notes": "Title of message"
+    },
+    {
+      "fieldname": "total",
+      "type": "Numeric",
+      "notes": "How many total messages"
+    },
+    {
+      "fieldname": "urlFxMsg",
+      "type": "String",
+      "notes": "URL of fax message"
+    },
+    {
+      "fieldname": "urlMsg",
+      "type": "String",
+      "notes": "URL of message"
+    },
+    {
+      "fieldname": "urlTxMsg",
+      "type": "String",
+      "notes": "URL of TX message"
+    }
+  ]
+}

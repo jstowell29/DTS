@@ -1,0 +1,89 @@
+{
+  "id": "qualifications-getBQVolDetail",
+  "name": "Qualifications.getBQVolDetail",
+  "description": "Returns the details of who made up commission values. It will list the individual values that contribute to the total in array",
+  "inputs": [
+    {
+      "fieldname": "distid",
+      "type": "Numeric",
+      "notes": "Distributor ID to return qualification data for"
+    },
+    {
+      "fieldname": "pvdate",
+      "type": "Numeric",
+      "notes": "The Volume Period that you want data for"
+    },
+    {
+      "fieldname": "fieldname",
+      "type": "String",
+      "notes": "DataField to show detail on.  List of up to 10 allowed."
+    },
+    {
+      "fieldname": "extrainfo",
+      "type": "String",
+      "notes": "Retrieve extended BWT info. Yes or No.  Default is No."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bqt_period_type",
+      "type": "String",
+      "notes": "PB for Primary, SB for Secondary, TB for Tertiary"
+    },
+    {
+      "fieldname": "bqt_pv_date",
+      "type": "Numeric",
+      "notes": "Volume Period"
+    },
+    {
+      "fieldname": "rows",
+      "type": "Array",
+      "notes": "Array of details for current period"
+    },
+    {
+      "fieldname": "bqt_current_growth_percent",
+      "type": "Numeric",
+      "notes": "Growth percentage"
+    },
+    {
+      "fieldname": "bqt_last_growth_percent",
+      "type": "Numeric",
+      "notes": "Last period growth percentage"
+    },
+    {
+      "fieldname": "bqt_source_amount",
+      "type": "Numeric",
+      "notes": "Source contributing amount"
+    },
+    {
+      "fieldname": "bqt_source_amount_2ago",
+      "type": "Numeric",
+      "notes": "Source contributing amount 2 periods ago"
+    },
+    {
+      "fieldname": "bqt_source_amount_last",
+      "type": "Numeric",
+      "notes": "Source contributing amount last period"
+    },
+    {
+      "fieldname": "bqt_source_dist_id",
+      "type": "Numeric",
+      "notes": "Source contributing distributor ID"
+    },
+    {
+      "fieldname": "bqt_source_level",
+      "type": "Numeric",
+      "notes": "Source Level"
+    },
+    {
+      "fieldname": "bqt_source_name",
+      "type": "String",
+      "notes": "Source contributing name"
+    },
+    {
+      "fieldname": "fieldname",
+      "type": "String",
+      "notes": "Field Name"
+    }
+  ]
+}

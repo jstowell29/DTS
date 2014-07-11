@@ -1,0 +1,164 @@
+
+
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+      <li class="active">Data</li>
+  </ol>
+
+        <!-- <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+                <ul class="nav">
+                    <li><a href="#">Distributor</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">MessageBox</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+              
+    
+
+    <div class="container" ng-controller="TreeController" >
+    <div>{{test.name}}</div>
+    <ul >
+    <li ng-repeat="fam in test.family">{{fam.name}}</li>
+    
+</ul>
+
+<ul >
+    <li ng-repeat="list in handlers.names">{{list.title}}</li>
+    
+</ul>
+    
+    <div class="row">
+    <div class="col-md-3">
+        
+        <div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+            <ul class="nav ">
+                <li ng-repeat="list in handlers.names">
+                    <label label-default="" class="tree-toggler nav-header" ng-click="collapse()">{{list.title}}</label>
+                    <ul class="nav tree active-trial">
+                        <li><a href="#">Link</a>
+
+                        </li>
+                        <li><a href="#">Link</a>
+
+                        </li>
+                        <li>
+                            <label label-default="" class="tree-toggler nav-header ">Header 1.1</label>
+                            <ul class="nav  tree  active-trial">
+                                <li class="active"><a ui-sref=".stuff">Good Stuff</a>
+
+                                </li>
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li>
+                                    <label label-default="" class="tree-toggler nav-header">Header 1.1.1</label>
+                                    <ul class="nav  tree">
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-divider"></li>
+                <li>
+                    <label label-default="" class="tree-toggler nav-header" ng-click="collapse()">Header 2</label>
+                    <ul class="nav  tree">
+                        <li><a href="#">Link</a>
+
+                        </li>
+                        <li><a href="#">Link</a>
+
+                        </li>
+                        <li>
+                            <label label-default="" class="tree-toggler nav-header">Header 2.1</label>
+                            <ul class="nav  tree">
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li>
+                                    <label label-default="" class="tree-toggler nav-header">Header 2.1.1</label>
+                                    <ul class="nav  tree">
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label label-default="" class="tree-toggler nav-header">Header 2.2</label>
+                            <ul class="nav  tree">
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li>
+                                    <label label-default="" class="tree-toggler nav-header">Header 2.2.1</label>
+                                    <ul class="nav  tree">
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label label-default="" class="tree-toggler nav-header">Header 2.2</label>
+                            <ul class="nav  tree">
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li><a href="#">Link</a>
+
+                                </li>
+                                <li>
+                                    <label label-default="" class="tree-toggler nav-header">Header 2.2.1</label>
+                                    <ul class="nav  tree">
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                        <li><a href="#">Link</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+
+    <div class="col-md-9">
+            <div ui-view autoscroll="false"></div>
+        
+    </div>
+
+</div>
+</div>
+
+

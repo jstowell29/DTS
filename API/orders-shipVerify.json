@@ -1,0 +1,19 @@
+{
+  "id": "distributor-shipVerify",
+  "name": "Distributor.shipVerify",
+  "description": "Ship verifies an order",
+  "inputs": [
+    {
+      "fieldname": "odhNumber",
+      "type": "Numeric",
+      "notes": "Order Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful."
+    }
+  ]
+}

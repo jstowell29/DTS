@@ -1,0 +1,34 @@
+{
+  "id": "messagebox-deleteMessage",
+  "name": "MessageBox.deleteMessage",
+  "description": "Deletes a message or a list of messages for a user",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageIdList",
+      "type": "String",
+      "notes": "comma separated list of message ID's"
+    },
+    {
+      "fieldname": "whenCalled",
+      "type": "String",
+      "notes": "YYYYMMDDHHMMSS"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return PASS or FAIL "
+    }
+  ]
+}

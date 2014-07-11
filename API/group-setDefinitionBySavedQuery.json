@@ -1,0 +1,77 @@
+{
+  "id": "group-setDefinitionBySavedQuery",
+  "name": "Group.setDefinitionBySavedQuery",
+  "description": "Set or create a group Definition by a FastTree Query",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id",
+      "required": "true"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Any display name"
+    },
+    {
+      "fieldname": "appName",
+      "type": "String",
+      "notes": "Query application name.  Default is GenQueries"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group",
+      "required": "true"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "The saved query ID",
+      "required": "true"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": "Detail query string parameter value"
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "&Name=Value pairs to replace %NAME% with value in query string"
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": "Filter criteria to limit group"
+    },
+    {
+      "fieldname": "photoUrl",
+      "type": "String",
+      "notes": "URL for the default photo"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "group-setQuery",
+  "name": "Group.setQuery",
+  "description": "Set the query of a group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    },
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": "Fast Tree query to populate group with Ids."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

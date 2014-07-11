@@ -1,0 +1,20 @@
+{
+  "id": "distributor-checkAcctStatus",
+  "name": "Distributor.checkAcctStatus",
+  "description": "Check the Evo account status for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns A for active, N for inactive"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "messagebox-setMessage",
+  "name": "MessageBox.setMessage",
+  "description": "Create a message without sending. Used to return statistics before message is sent.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "toList",
+      "type": "String",
+      "notes": "Message ID to change the status of"
+    },
+    {
+      "fieldname": "primaryMessage",
+      "type": "String",
+      "notes": "List of IDs to receive message also phone numbers prepended with "
+    },
+    {
+      "fieldname": "primaryMessageType",
+      "type": "String",
+      "notes": "Type of Primary Message"
+    },
+    {
+      "fieldname": "title",
+      "type": "String",
+      "notes": "Title of message"
+    },
+    {
+      "fieldname": "urgent",
+      "type": "Boolean",
+      "notes": "Yes or No are valid values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "reply",
+      "type": "String",
+      "notes": "Yes, No, All"
+    },
+    {
+      "fieldname": "forward",
+      "type": "String",
+      "notes": "Allow forwarding (Yes or No)"
+    },
+    {
+      "fieldname": "attachment",
+      "type": "String",
+      "notes": "Full path to attachment"
+    },
+    {
+      "fieldname": "attachmentType",
+      "type": "String",
+      "notes": "Attachment Type (PDF, HTML, MP3, etc)"
+    },
+    {
+      "fieldname": "originalMessageId",
+      "type": "Numeric",
+      "notes": "Message ID of original message"
+    },
+    {
+      "fieldname": "tVersion",
+      "type": "String",
+      "notes": "FastTree version"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS"
+    }
+  ]
+}

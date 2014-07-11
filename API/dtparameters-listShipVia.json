@@ -1,0 +1,51 @@
+{
+  "id": "dtparameters-listShipVia",
+  "name": "DtParameters.listShipVia",
+  "description": "Returns a list of available ship vias for a specified country.",
+  "inputs": [
+    {
+      "fieldname": "country",
+      "type": "String",
+      "notes": "3 letter country code",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "allow_nettrax",
+      "type": "Numeric",
+      "notes": "Flag that specifies if allowed to be used on the web."
+    },
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "decscription",
+      "type": "String",
+      "notes": "Ship via description"
+    },
+    {
+      "fieldname": "ship_to_country",
+      "type": "String",
+      "notes": "Country the ship via will ship to."
+    },
+    {
+      "fieldname": "ship_via_code",
+      "type": "Numeric",
+      "notes": "Numerical representation of ship via code."
+    },
+    {
+      "fieldname": "short_desc",
+      "type": "String",
+      "notes": "Short description of ship via"
+    },
+    {
+      "fieldname": "warehouse_number",
+      "type": "String",
+      "notes": "Warehouse number associated with ship via."
+    }
+  ],
+  "url": "http://dts.myvoffice.com/clientname/dts/index.cfm;jsessionid=**sessionid**?service=DTParameters.listShipVia&apikey=**APIKEY**&COUNTRY=USA&format=JSON"
+}

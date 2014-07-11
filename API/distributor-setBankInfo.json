@@ -1,0 +1,89 @@
+{
+  "id": "distributor-setBankInfo",
+  "name": "Distributor.setBankInfo",
+  "description": "Sets Bank Draft Information",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "ACCT_NAME",
+      "type": "String",
+      "notes": "Account Name"
+    },
+    {
+      "fieldname": "ACCT_NUMBER",
+      "type": "Numeric",
+      "notes": "Account Number"
+    },
+    {
+      "fieldname": "ACCT_TYPE",
+      "type": "Numeric",
+      "notes": "0 for check or 1 for Savings"
+    },
+    {
+      "fieldname": "STATUS",
+      "type": "String",
+      "notes": "1 letter code"
+    },
+    {
+      "fieldname": "TRANSIT",
+      "type": "Numeric",
+      "notes": "Transit Number"
+    },
+    {
+      "fieldname": "SWIFT_NUMBER",
+      "type": "Numeric",
+      "notes": "Swift Number for International"
+    },
+    {
+      "fieldname": "BANK_NAME",
+      "type": "String",
+      "notes": "Bank Name"
+    },
+    {
+      "fieldname": "BANK_NUMBER",
+      "type": "Numeric",
+      "notes": "Bank Number"
+    },
+    {
+      "fieldname": "BRANCH_NAME",
+      "type": "String",
+      "notes": "Branch Name"
+    },
+    {
+      "fieldname": "BRANCH_NUMBER",
+      "type": "Numeric",
+      "notes": "Branch Number"
+    },
+    {
+      "fieldname": "ADDR1",
+      "type": "String",
+      "notes": "Address Line 1"
+    },
+    {
+      "fieldname": "ADDR2",
+      "type": "String",
+      "notes": "Address Line 2"
+    },
+    {
+      "fieldname": "ADDR3",
+      "type": "String",
+      "notes": "Address Line 3"
+    },
+    {
+      "fieldname": "BANK_COUNTRY",
+      "type": "String",
+      "notes": "Country Of Bank"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

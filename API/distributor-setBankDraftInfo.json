@@ -1,0 +1,79 @@
+{
+  "id": "distributor-setBankDraftInfo",
+  "name": "Distributor.setBankDraftInfo",
+  "description": "Returns Bank Draft Information",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "ACCT_NAME",
+      "type": "String",
+      "notes": "Bank Account Name"
+    },
+    {
+      "fieldname": "ACCT_NUMBER",
+      "type": "Numeric",
+      "notes": "Bank Account Number"
+    },
+    {
+      "fieldname": "TRANSIT",
+      "type": "Numeric",
+      "notes": "Bank Transit Number"
+    },
+    {
+      "fieldname": "STATUS",
+      "type": "String",
+      "notes": "Status of Draft A is for active"
+    },
+    {
+      "fieldname": "BANK_NAME",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "BANK_NUMBER",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "BRANCH_NAME",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "BRANCH_NUMBER",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "BANK_ADDR1",
+      "type": "String",
+      "notes": "Street address"
+    },
+    {
+      "fieldname": "BANK_ADDR2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "BANK_ADDR3",
+      "type": "String",
+      "notes": "City, State Zip"
+    },
+    {
+      "fieldname": "BANK_ADDR4",
+      "type": "String",
+      "notes": "Miscellaneous Address"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "group-pinIds",
+  "name": "Group.pinIds",
+  "description": "Allows for manual management of people within a group. Pinning, unpinning, deleting.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    },
+    {
+      "fieldname": "idList",
+      "type": "String",
+      "notes": "List of Ids to add"
+    },
+    {
+      "fieldname": "pinStatus",
+      "type": "String",
+      "notes": "Include (pin), Exclude (unpin), None (delete)."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group ID"
+    },
+    {
+      "fieldname": "pinId",
+      "type": "Numeric",
+      "notes": "ID of pinned person"
+    },
+    {
+      "fieldname": "pinStatus",
+      "type": "String",
+      "notes": "I"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

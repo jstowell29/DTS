@@ -1,0 +1,29 @@
+{
+  "id": "distributor-getbankdraftvalid",
+  "name": "Distributor.getBankDraftValid",
+  "description": "Returns true or false if person has a valid bank draft on file",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": ""
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "DRF",
+      "type": "Boolean",
+      "notes": "True or False"
+    },
+    {
+      "fieldname": "DRF_ACCT",
+      "type": "Numeric",
+      "notes": "Encrypted Account Number"
+    }
+  ]
+}

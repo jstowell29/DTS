@@ -1,0 +1,24 @@
+{
+  "id": "distributor-suspend",
+  "name": "Distributor.suspend",
+  "description": "Suspend a Distributor within the system",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "REASON",
+      "type": "String",
+      "notes": "Reason the person was suspended"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

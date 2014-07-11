@@ -1,0 +1,29 @@
+{
+  "id": "messagebox-deleteNotify",
+  "name": "MessageBox.deleteNotify",
+  "description": "Deletes a notification that has been set up for a user",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of the notification"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return PASS or FAIL"
+    }
+  ]
+}

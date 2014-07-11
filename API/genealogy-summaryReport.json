@@ -1,0 +1,79 @@
+{
+  "id": "genealogy-summaryReport",
+  "name": "Genealogy.summaryReport",
+  "description": "Runs an ad-hoc FastTree summary report.",
+  "inputs": [
+    {
+      "fieldname": "files",
+      "type": "String",
+      "notes": "FastTree file ID (example: $CURR,TRDSTGEN)"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "qstr",
+      "type": "String",
+      "notes": "Filter criteria to run (example: vol1>100)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "data",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "Always be summary"
+    },
+    {
+      "fieldname": "membersSelected",
+      "type": "Numeric",
+      "notes": "Count of people that met the filter criteria"
+    },
+    {
+      "fieldname": "fileId",
+      "type": "String",
+      "notes": "Temp file returned if requested"
+    },
+    {
+      "fieldname": "period",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "exists",
+      "type": "Boolean",
+      "notes": "True or False"
+    },
+    {
+      "fieldname": "fileId",
+      "type": "String",
+      "notes": "FastTree File Accessed"
+    },
+    {
+      "fieldname": "period",
+      "type": "Numeric",
+      "notes": "Volume Period (YYYYMM)"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "PB for primary, SB for secondary, TB for tertiary"
+    },
+    {
+      "fieldname": "queryTime",
+      "type": "Numeric",
+      "notes": "Time it takes to complete the query"
+    },
+    {
+      "fieldname": "totalMembers",
+      "type": "Numeric",
+      "notes": "Total members in member's downline"
+    }
+  ]
+}

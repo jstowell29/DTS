@@ -1,0 +1,54 @@
+{
+  "id": "group-setDefinition",
+  "name": "Group.setDefinition",
+  "description": "Create a new group Definition based off of a query",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Any display name"
+    },
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": "Query string to populate group"
+    },
+    {
+      "fieldname": "valuePairs",
+      "type": "String",
+      "notes": "&Name=Value pairs to replace %NAME% with value in query string"
+    },
+    {
+      "fieldname": "photoUrl",
+      "type": "String",
+      "notes": "URL for the default photo"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "description of error"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

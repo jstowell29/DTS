@@ -1,0 +1,90 @@
+{
+  "id": "distributor-getShipToAddress",
+  "name": "Distributor.getShipToAddress",
+  "description": "Returns ship-to address for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Ship-to Sequence Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "addr_1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "addr_2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "addr_3",
+      "type": "String",
+      "notes": "City, State Postal Code"
+    },
+    {
+      "fieldname": "addr_4",
+      "type": "String",
+      "notes": "Misc Address Field"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "geo",
+      "type": "String",
+      "notes": "Geo Code"
+    },
+    {
+      "fieldname": "key",
+      "type": "String",
+      "notes": "Ship-to description"
+    },
+    {
+      "fieldname": "num",
+      "type": "Numeric",
+      "notes": "Number"
+    },
+    {
+      "fieldname": "phone_1",
+      "type": "Numeric",
+      "notes": "Phone 1 Field"
+    },
+    {
+      "fieldname": "spouse",
+      "type": "String",
+      "notes": "Ship-to Spouse Name"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "2 letter state code"
+    },
+    {
+      "fieldname": "zip_code",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "unicorp",
+      "type": "String",
+      "notes": "Miscellaneous Field"
+    }
+  ]
+}

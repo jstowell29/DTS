@@ -1,0 +1,29 @@
+{
+  "id": "earnings-commissionSummary",
+  "name": "Earnings.commissionSummary",
+  "description": "Returns Summary of Commissions",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "period",
+      "type": "String",
+      "notes": "YYYYPP format only"
+    },
+    {
+      "fieldname": "bType",
+      "type": "String",
+      "notes": "Bonus Type"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "PDF File Path",
+      "type": "PDF",
+      "notes": "This will return the physical PDF file"
+    }
+  ]
+}

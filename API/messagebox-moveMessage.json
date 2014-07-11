@@ -1,0 +1,34 @@
+{
+  "id": "messagebox-moveMessage",
+  "name": "MessageBox.moveMessage",
+  "description": "Moves a message from one Message Box to another",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "ID of Message to Move"
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "The inbox ID of the message box. A number between 0-255"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns a PASS or a FAIL status."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "group-deleteNote",
+  "name": "Group.deleteNote",
+  "description": "Delete a note from available notes",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corporate Id?  Yes or no, default is no."
+    },
+    {
+      "fieldname": "distIdNote",
+      "type": "String",
+      "notes": "Distributor Id that has a note attached."
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Only applies when setNote used a group."
+    },
+    {
+      "fieldname": "noteId",
+      "type": "String",
+      "notes": "Note Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

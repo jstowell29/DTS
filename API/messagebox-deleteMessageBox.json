@@ -1,0 +1,29 @@
+{
+  "id": "messagebox-deleteMessageBox",
+  "name": "MessageBox.deleteMessageBox",
+  "description": "Deletes a Message Box",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "MessageBox ID Number values 0 through 255"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return PASS or FAIL"
+    }
+  ]
+}

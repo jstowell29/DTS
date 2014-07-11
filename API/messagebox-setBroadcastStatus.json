@@ -1,0 +1,34 @@
+{
+  "id": "messagebox-setBroadcastStatus",
+  "name": "MessageBox.setBroadcastStatus",
+  "description": "Change status of a message",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageId",
+      "type": "String",
+      "notes": "Message ID to change the status of"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Retract:remove from unopened mailboxes, Archive:remove message history, Close:retract and remove, Delete:remove from system, Remove:keep history but delete from mailbox"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns PASS or FAIL."
+    }
+  ]
+}

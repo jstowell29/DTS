@@ -1,0 +1,44 @@
+{
+  "id": "messagebox-getUsage",
+  "name": "MessageBox.getUsage",
+  "description": "Returns Usage data for billing purposes of toll free numbers",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "fromDate",
+      "type": "String",
+      "notes": "CCYYMMDD"
+    },
+    {
+      "fieldname": "fromTime",
+      "type": "String",
+      "notes": "UTC HHMMSS"
+    },
+    {
+      "fieldname": "toDate",
+      "type": "String",
+      "notes": "CCYYMMDD"
+    },
+    {
+      "fieldname": "toTime",
+      "type": "String",
+      "notes": "UTC HHMMSS"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

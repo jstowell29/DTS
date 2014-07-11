@@ -1,0 +1,85 @@
+{
+  "id": "distributor-getAcctInq",
+  "name": "Distributor.getAcctInq",
+  "description": "Returns transaction information form accounts receivable for each member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bal_amt",
+      "type": "Numeric",
+      "notes": "Running account balance amount"
+    },
+    {
+      "fieldname": "beg_bal",
+      "type": "Numeric",
+      "notes": "Account beginning balance"
+    },
+    {
+      "fieldname": "cou",
+      "type": "Numeric",
+      "notes": "Country transaction orginated from."
+    },
+    {
+      "fieldname": "cv_amount",
+      "type": "Numeric",
+      "notes": "Commission Volume Amount"
+    },
+    {
+      "fieldname": "date",
+      "type": "Numeric",
+      "notes": "Transaction Date"
+    },
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Transaction Description"
+    },
+    {
+      "fieldname": "name_abr",
+      "type": "String",
+      "notes": "Period Abbreviation"
+    },
+    {
+      "fieldname": "posted",
+      "type": "String",
+      "notes": "Y or N whether or not transaction is posted."
+    },
+    {
+      "fieldname": "pv_amount",
+      "type": "Numeric",
+      "notes": "Personal volume amount."
+    },
+    {
+      "fieldname": "pv_date",
+      "type": "Numeric",
+      "notes": "Volume period date"
+    },
+    {
+      "fieldname": "pv_year",
+      "type": "Numeric",
+      "notes": "Volume period year."
+    },
+    {
+      "fieldname": "tran_amount",
+      "type": "Numeric",
+      "notes": "Transaction amount"
+    },
+    {
+      "fieldname": "tran_number",
+      "type": "Numeric",
+      "notes": "Unique transaction number"
+    },
+    {
+      "fieldname": "type",
+      "type": "String",
+      "notes": "Refer to the transactional key for all different transaction types."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dtparameters-distStatusInfo",
+  "name": "DtParameters.distStatusInfo",
+  "description": "Distributor Status Information",
+  "inputs": [
+    {
+      "fieldname": "function",
+      "type": "String",
+      "notes": "All (Returns all statuses) or Single (return information for a single status)"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Distributor Status"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "dss",
+      "type": "Array",
+      "notes": "A list of all available distributor statuses"
+    },
+    {
+      "fieldname": "short_desc",
+      "type": "String",
+      "notes": "Short Description of status"
+    },
+    {
+      "fieldname": "status_code",
+      "type": "String",
+      "notes": "Status code"
+    },
+    {
+      "fieldname": "status_desc",
+      "type": "String",
+      "notes": "Status description"
+    }
+  ]
+}

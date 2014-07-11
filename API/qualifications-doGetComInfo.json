@@ -1,0 +1,34 @@
+{
+  "id": "qualifications-doGetComInfo",
+  "name": "Qualifications.doGetComInfo",
+  "description": "Commission information",
+  "inputs": [
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "The Volume Period that you want data for"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "Period type. PB, SB, or TB. Default is PB."
+    },
+    {
+      "fieldname": "numPeriods",
+      "type": "Numeric",
+      "notes": "Number of periods"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "comInfo",
+      "type": "Numeric",
+      "notes": "Will return all commission fields based off of period"
+    }
+  ]
+}

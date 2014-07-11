@@ -1,0 +1,39 @@
+{
+  "id": "earnings-getEarningsByTypeSummary",
+  "name": "Earnings.getEarningsByTypeSummary",
+  "description": "Returns Earnings summary by Bonus Types (PB or SB)",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "Volume Period (Format YYYYMM)"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "Default value is "
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "Array",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "Bonus_Type_Name",
+      "type": "String",
+      "notes": "Bonus Type Name"
+    },
+    {
+      "fieldname": "Ern_Amt",
+      "type": "Numeric",
+      "notes": "Bonus Type Amount"
+    }
+  ]
+}

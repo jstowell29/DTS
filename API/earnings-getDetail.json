@@ -1,0 +1,39 @@
+{
+  "id": "earnings-getDetail",
+  "name": "Earnings.getDetail",
+  "description": "Returns earnings details for a specified volume period",
+  "inputs": [
+    {
+      "fieldname": "distid",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "fieldname",
+      "type": "String",
+      "notes": "Commission Field Name To Return Detail On"
+    },
+    {
+      "fieldname": "pvdate",
+      "type": "Numeric",
+      "notes": "Commission Period (Format YYYYMM)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bqd_period_type",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "bqd_pv_date",
+      "type": "Numeric",
+      "notes": "Volume Period (Format YYYYMM)"
+    },
+    {
+      "fieldname": "rows",
+      "type": "array",
+      "notes": "This will return an array of the members who make up the specified commission field"
+    }
+  ]
+}

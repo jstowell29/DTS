@@ -1,0 +1,68 @@
+<!--Service Name Goes Here -->
+<h2>{{mydata.name}}</h2>
+<!--API DESCRIPTION -->
+<div class="api-description">
+	<p>{{mydata.description}}</p>	
+</div>
+
+<!--Inputs Table -->
+<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4>Inputs</h4></div>
+		<table class="table table-striped table-hover table-bordered">
+			<thead>
+				<tr>
+					<!-- <th>Required</th> -->
+					<th>Field Name</th>
+					<th>Field Type</th>
+					<th>Description</th>
+					<th>Required</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="detail in mydata.inputs" ng-class="{'danger': detail.required == 'true'}" class="">
+					<!-- <td><span class="badge badge-danger">Required</span></td> -->
+					<td>{{detail.fieldname}}</td>
+					<td><span class="{{detail.type == 'String' && 'label label-primary' || 'label label-success'}}">{{detail.type}}</span></td>
+					<td>{{detail.notes}}</td>
+					<td>{{detail.required}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!--Outputs Table -->
+
+<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4>Outputs</h4></div>
+		<table class="table table-striped table-hover table-bordered">
+			<thead>
+				<tr>
+					
+					<th>Field Name</th>
+					<th>Field Type</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="detail in mydata.outputs">
+					
+					<td>{{detail.fieldname}}</td>
+					<!-- <td><span class="{{detail.type == 'String' && 'label label-primary' || 'label label-success'}}">{{detail.type}}</span></td> -->
+					<td><span ng-class="{'label label-success': detail.type == 'Numeric', 'label label-primary': detail.type == 'String', 'label label-warning': detail.type == 'Array'}" class="">{{detail.type}}</span></td>
+
+					<td>{{detail.notes}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- Example -->
+
+<div class="row" ng-show="myresponse">
+	<h3>Output Example</h3>
+	<pre>{{myresponse}}</pre>
+</div>

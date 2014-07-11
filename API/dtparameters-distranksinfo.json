@@ -1,0 +1,24 @@
+{
+  "id": "dtparameters-distranksinformation",
+  "name": "Dtparameters.distRanksInformation",
+  "description": "Returns all available distributor ranks",
+  "inputs": [
+    {
+      "fieldname": "None",
+      "type": "None",
+      "notes": "No Input Field Required"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "rank",
+      "type": "Array",
+      "notes": "Returns an array of rank numbers"
+    },
+    {
+      "fieldname": "rank_name",
+      "type": "Array",
+      "notes": "Returns an array of rank names"
+    }
+  ]
+}

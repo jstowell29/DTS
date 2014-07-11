@@ -1,0 +1,57 @@
+
+
+   <!--  <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+      <li class="active">Data</li>
+  </ol> -->
+<!-- <ui-breadcrumbs displayname-property="data.displayName">
+  <ol class="breadcrumb">
+      <li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }">
+          <a ui-sref="{{ crumb.route }}" ng-if="!$last">{{ crumb.displayName }}</a>
+          <span ng-show="$last">{{ crumb.displayName }}</span>
+      </li>
+  </ol>
+</ui-breadcrumbs> -->
+
+        <!-- <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+                <ul class="nav">
+                    <li><a href="#">Distributor</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">MessageBox</a></li>
+                </ul>
+            </div>
+        </div> -->
+    <div class="container main-grid" ng-controller="TreeController" >
+
+    <!-- <div class="row"> -->
+    <div class="col-md-2 sidelist col-sm-1">
+        
+        <div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+            <ul class="nav ">
+                <li ui-sref-active="active" ng-repeat="list in handlers.names" class="docs-list" class="item">
+                    <a label-default="" class="tree-toggler nav-header" ng-click="collapse()" href="">{{list.title}}</a>
+                    <ul class="nav tree active-trial">
+                        <!-- <li class="active"><a ui-sref=".stuff">Good Stuff</a>
+                        </li> -->
+                        <li ng-repeat="service in list.services" class="docs-list-services"><a ui-sref=".detail({serviceId: service.id})">{{service.title}}</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-divider"></li>
+            </ul>
+        </div>
+    </div>
+   
+    <div class="col-md-8 col-md-offset-1 col-sm-offset-1 col-sm-6 apidetail">
+      <div ui-view autoscroll="false">
+        <div ng-include src="'partials/partial-apiwelcome.html'"></div>
+      </div>       
+    </div>
+
+<!-- </div> -->
+</div>
+
+

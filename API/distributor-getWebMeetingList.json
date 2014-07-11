@@ -1,0 +1,49 @@
+{
+  "id": "webmeeting-getWebMeetingList",
+  "name": "Webmeeting.getWebMeetingList",
+  "description": "Returns list of web meetings hosted by a distributor",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corp ID? Yes or no.  Default is No."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "descr",
+      "type": "String",
+      "notes": "Description of the webmeeting"
+    },
+    {
+      "fieldname": "end_dt",
+      "type": "Numeric",
+      "notes": "End date  of the web meeting"
+    },
+    {
+      "fieldname": "id",
+      "type": "Numeric",
+      "notes": "ID Number of the web meeting"
+    },
+    {
+      "fieldname": "listen_url",
+      "type": "String",
+      "notes": "URL to listen to the web meeting"
+    },
+    {
+      "fieldname": "start_date",
+      "type": "Numeric",
+      "notes": "start date of the web meeting"
+    },
+    {
+      "fieldname": "title",
+      "type": "String",
+      "notes": "Title of the webmeeting"
+    }
+  ]
+}

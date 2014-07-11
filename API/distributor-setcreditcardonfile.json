@@ -1,0 +1,74 @@
+{
+  "id": "distributor-setCreditCardOnFile",
+  "name": "Distributor.setCreditCardOnFile",
+  "description": "Sets a credit card to be stored on file.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Credit Card sequence number"
+    },
+    {
+      "fieldname": "cc_name",
+      "type": "String",
+      "notes": "Credit Card Name"
+    },
+    {
+      "fieldname": "addr1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "addr2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "addr3",
+      "type": "String",
+      "notes": "City, State, Postal Code"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "State"
+    },
+    {
+      "fieldname": "postal_code",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "pay_doc",
+      "type": "Numeric",
+      "notes": "Credit Card Number"
+    },
+    {
+      "fieldname": "cc_exp",
+      "type": "Numeric",
+      "notes": "CC Expiration Date (YYYYMM)"
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "Credit Card Description"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "distributor-validateAddress",
+  "name": "Distributor.validateAddress",
+  "description": "Validates if an address is valid or not. Will return validated address information if valid. Otherwise return invalid_address.",
+  "inputs": [
+    {
+      "fieldname": "addr1",
+      "type": "String",
+      "notes": "Street Address",
+      "required": "true"
+    },
+    {
+      "fieldname": "addr2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "addr3",
+      "type": "String",
+      "notes": "City, State Postal Code"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "City",
+      "required": "true"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "State",
+      "required": "true"
+    },
+    {
+      "fieldname": "zip",
+      "type": "String",
+      "notes": "Postal Code",
+      "required": "true"
+    },
+    {
+      "fieldname": "country",
+      "type": "String",
+      "notes": "3 Letter Country Code",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "ADDR_1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "ADDR_2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "ADDR_3",
+      "type": "String",
+      "notes": "Address line 3 example City, ST ZIP"
+    },
+    {
+      "fieldname": "ADDR_4",
+      "type": "String",
+      "notes": "Miscellaneous address line"
+    },
+    {
+      "fieldname": "CITY",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "COUNTRY_CODE",
+      "type": "String",
+      "notes": "3 character country "
+    },
+    {
+      "fieldname": "COUNTY",
+      "type": "String",
+      "notes": "County"
+    },
+    {
+      "fieldname": "GEO_CODE",
+      "type": "String",
+      "notes": "Geo Code"
+    },
+    {
+      "fieldname": "GEO_DESC",
+      "type": "String",
+      "notes": "Geo Code Description"
+    },
+    {
+      "fieldname": "GEO_INDICATOR",
+      "type": "String",
+      "notes": "Geo Code Indicator Inside or Outside"
+    },
+    {
+      "fieldname": "POSTAL_CODE",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "STATE",
+      "type": "String",
+      "notes": "State"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "distributor-deletecreditcardsonfile",
+  "name": "Distributor.deleteCreditCardOnFile",
+  "description": "This will delete a specific credit card on file based on Sequence Number",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Sequence number of card on file"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return 'OK' if successful"
+    }
+  ]
+}

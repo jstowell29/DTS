@@ -1,0 +1,29 @@
+{
+  "id": "messagebox-getForwardingID",
+  "name": "MessageBox.getForwardingID",
+  "description": "Returns the ID of the message that has been forwarded",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "Message ID "
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return "
+    }
+  ]
+}

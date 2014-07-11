@@ -1,0 +1,24 @@
+{
+  "id": "distributor-setEmail",
+  "name": "Distributor.setEmail",
+  "description": "Sets the email address of a distributor",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "EMAIL",
+      "type": "String",
+      "notes": "FastTree field name to search on"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

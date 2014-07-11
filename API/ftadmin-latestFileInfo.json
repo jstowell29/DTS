@@ -1,0 +1,49 @@
+{
+  "id": "ftAdmin-latestFileInfo",
+  "name": "FtAdmin.latestFileInfo",
+  "description": "Returns information about the latest file imported to FastTree",
+  "inputs": [
+    {
+      "fieldname": "No Input Parameters",
+      "type": "NoInput",
+      "notes": "No Input Parameters Required"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "begin",
+      "type": "Numeric",
+      "notes": "Begin Date of period"
+    },
+    {
+      "fieldname": "end",
+      "type": "Numeric",
+      "notes": "End date of period"
+    },
+    {
+      "fieldname": "import",
+      "type": "Numeric",
+      "notes": "Import Date of File"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of File (e.g. TRPB201305)"
+    },
+    {
+      "fieldname": "period",
+      "type": "Numeric",
+      "notes": "Volume Period Number"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "Volume Period Type (e.g. PB = Primary Bonus)"
+    },
+    {
+      "fieldname": "periodYear",
+      "type": "Numeric",
+      "notes": "Volume Period Year"
+    }
+  ]
+}

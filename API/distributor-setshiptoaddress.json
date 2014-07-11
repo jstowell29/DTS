@@ -1,0 +1,104 @@
+{
+  "id": "distributor-setShipToAddress",
+  "name": "Distributor.setShipToAddress",
+  "description": "This will set the ship to address on file. If the sequence is not specified it will set the sequence to the next incremented number.",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "SEQ",
+      "type": "Numeric",
+      "notes": "Sequence based on other ship to addresses on file"
+    },
+    {
+      "fieldname": "SHIP_DESC",
+      "type": "String",
+      "notes": "Description of ship to address"
+    },
+    {
+      "fieldname": "SHIP_NAME",
+      "type": "String",
+      "notes": "Ship To Name"
+    },
+    {
+      "fieldname": "SHIP_SPOUSE",
+      "type": "String",
+      "notes": "Spouse name of ship name if applicable"
+    },
+    {
+      "fieldname": "SHIP_ADDR_1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "SHIP_ADDR_2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "SHIP_ADDR_3",
+      "type": "String",
+      "notes": "Address line 3 example City, ST ZIP"
+    },
+    {
+      "fieldname": "SHIP_ADDR_4",
+      "type": "String",
+      "notes": "Miscellaneous address line"
+    },
+    {
+      "fieldname": "SHIP_CITY",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "SHIP_STATE",
+      "type": "String",
+      "notes": "2 Letter state code"
+    },
+    {
+      "fieldname": "SHIP_ZIP",
+      "type": "Numeric",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "SHIP_COU",
+      "type": "String",
+      "notes": "3 Letter country code"
+    },
+    {
+      "fieldname": "SHIP_GEO",
+      "type": "String",
+      "notes": "This will get set automatically based on address entered"
+    },
+    {
+      "fieldname": "SHIP_PHONE_1",
+      "type": "Numeric",
+      "notes": "Phone Field 1"
+    },
+    {
+      "fieldname": "SHIP_PHONE_2",
+      "type": "Numeric",
+      "notes": "Phone Field 2"
+    },
+    {
+      "fieldname": "SHIP_PHONE_3",
+      "type": "Numeric",
+      "notes": "Phone Field 3"
+    },
+    {
+      "fieldname": "SHIP_TO_CITY_LIMITS",
+      "type": "String",
+      "notes": "I or O (inside or outside city limits"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful."
+    }
+  ]
+}

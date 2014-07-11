@@ -1,0 +1,19 @@
+{
+  "id": "vo-checkAccount",
+  "name": "Vo.checkAccount",
+  "description": "Checks whether or not user has an Evo account",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return OK if successful"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<div class="col-md-10">
+	<h2>Message System</h2>
+	<p>The Evo messaging system allows for multiple types of messages Text, Voice, and Fax. Each message can also have an attachment of different media types. This information is described in the getMessageList (detail) below. This guide will focus primarily on returning the number of “new” messages. Listing a user’s inbox, reading messages and deleting messages. It will also go into detail on how to send a message.</p>
+	<hr>
+
+	<h3>Number Of New Messages</h3>
+	<h4>MessageBox.getMessageList (Summary Mode)</h4>
+
+
+	<p>This service will return the number of new messages. The count will be located in the field “NEW”. This is the hit that we use to return the number of new messages. The hit returns numbers on different kinds of messages, but we only need worry about the “new” field.</p>
+
+	<p>Here is an example call:</p>
+	<pre>/get http://dts.myvoffice.com/atomic/dts/index.cfm?jsessionid=84305142d986e79841c8e7551b5775713a14&service=MessageBox.getMessageList&apikey=*****&distid=1004&DETAIL=No&SELECTION=All&format=JSON</pre>
+
+	<p>Details on the input and output parameters for MessageBox.getMessageList can be found <a ui-sref="API.detail({serviceId: 'messagebox-getMessageListSummary'})">here</a>.</p>
+
+	<p>The output of the file will look like this.</p>
+
+</div>
+<div class="col-md-2">
+	<div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+		<h5>Services Used</h5>
+		<ul class="">
+			<li>MessageBox.getMessagelist</li>
+			<li>MessageBox.setMessageStatus</li>
+			<li>MessageBox.deleteMessage</li>
+			<li>MessageBox.setBroadcast</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,144 @@
+{
+  "id": "ear-getPaidOnDetail",
+  "name": "Earnings.getPaidOnDetail",
+  "description": "Returns Everyone A Person Was Paid On For a Particular Bonus Type",
+  "inputs": [
+    {
+      "fieldname": "periodType",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "distId",
+      "type": "String",
+      "notes": "Period Type (PB, SB, etc."
+    },
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "Period Date"
+    },
+    {
+      "fieldname": "Bonus Type",
+      "type": "Numeric",
+      "notes": "If left blank, this will return all bonus types. This is a numeric value"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bonus",
+      "type": "Numeric",
+      "notes": "Bonus Paid Out Amount"
+    },
+    {
+      "fieldname": "bonusType",
+      "type": "Numeric",
+      "notes": "Bonus Type Numerical Reference"
+    },
+    {
+      "fieldname": "bonusVolume",
+      "type": "Numeric",
+      "notes": "Bonus Volume"
+    },
+    {
+      "fieldname": "comDesc",
+      "type": "String",
+      "notes": "Descritption of the bonus"
+    },
+    {
+      "fieldname": "conversionRate",
+      "type": "Numeric",
+      "notes": "Currency conversion rate if applicable"
+    },
+    {
+      "fieldname": "convertedBonus",
+      "type": "Numeric",
+      "notes": "Bonus amount from currency conversion"
+    },
+    {
+      "fieldname": "currencyCode",
+      "type": "String",
+      "notes": "Currency Code"
+    },
+    {
+      "fieldname": "distBusCtr",
+      "type": "Numeric",
+      "notes": "Business Center If Applicable"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "dstCountryCode",
+      "type": "String",
+      "notes": "Distributor country code"
+    },
+    {
+      "fieldname": "dstDisplayName1",
+      "type": "String",
+      "notes": "Distributor Native Name"
+    },
+    {
+      "fieldname": "dstRomanName1",
+      "type": "String",
+      "notes": "Distributor Roman Name"
+    },
+    {
+      "fieldname": "level",
+      "type": "Numeric",
+      "notes": "Level Person is on relative to person running the report"
+    },
+    {
+      "fieldname": "paidLevel",
+      "type": "Numeric",
+      "notes": "Paid Level"
+    },
+    {
+      "fieldname": "percent",
+      "type": "Numeric",
+      "notes": "Percent Paid"
+    },
+    {
+      "fieldname": "pointValue",
+      "type": "Numeric",
+      "notes": "Point Value if applicable"
+    },
+    {
+      "fieldname": "qualVolume",
+      "type": "Numeric",
+      "notes": "Volume Field"
+    },
+    {
+      "fieldname": "rank",
+      "type": "Numeric",
+      "notes": "Rank Person is that was paid on"
+    },
+    {
+      "fieldname": "soldDistBusCtr",
+      "type": "Numeric",
+      "notes": "Business Center of person who was paid on"
+    },
+    {
+      "fieldname": "soldDistId",
+      "type": "Numeric",
+      "notes": "Distributor ID of person that was paid on"
+    },
+    {
+      "fieldname": "soldName",
+      "type": "String",
+      "notes": "Name of person that was paid on"
+    },
+    {
+      "fieldname": "sourceCountry",
+      "type": "String",
+      "notes": "Source country of the earnings"
+    },
+    {
+      "fieldname": "transactionNumber",
+      "type": "Numeric",
+      "notes": "Transaction Number if applicable"
+    }
+  ]
+}

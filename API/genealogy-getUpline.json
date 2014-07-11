@@ -1,0 +1,99 @@
+{
+  "id": "genealogy-getUpline",
+  "name": "Genealogy.getUpline",
+  "description": "Returns a members upline based on the sponsor tree",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "brk_flg",
+      "type": "Numeric",
+      "notes": "Misc Break Flag"
+    },
+    {
+      "fieldname": "cell_phone",
+      "type": "Numeric",
+      "notes": "FastTree file name"
+    },
+    {
+      "fieldname": "company_def_id",
+      "type": "Numeric",
+      "notes": "Volume Period (YYYYMM)"
+    },
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "PB for primary bonus, SB for secondary bonus, TB for tertiary bonus"
+    },
+    {
+      "fieldname": "display_name_1",
+      "type": "String",
+      "notes": "Members Name"
+    },
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "dist_status",
+      "type": "String",
+      "notes": "Member Status"
+    },
+    {
+      "fieldname": "email_addr",
+      "type": "String",
+      "notes": "Email Address"
+    },
+    {
+      "fieldname": "end_rnk",
+      "type": "Numeric",
+      "notes": "Pin Rank"
+    },
+    {
+      "fieldname": "fax_phone",
+      "type": "Numeric",
+      "notes": "Fax Number"
+    },
+    {
+      "fieldname": "home_phone",
+      "type": "Numeric",
+      "notes": "Home Number"
+    },
+    {
+      "fieldname": "work_phone",
+      "type": "Numeric",
+      "notes": "Work Number"
+    },
+    {
+      "fieldname": "native_name_1",
+      "type": "String",
+      "notes": "Native Name"
+    },
+    {
+      "fieldname": "rnk_abr",
+      "type": "String",
+      "notes": "Rank Abbreviation"
+    },
+    {
+      "fieldname": "rnk_abr_short",
+      "type": "String",
+      "notes": "Rank Abbreviation Short"
+    },
+    {
+      "fieldname": "roman_name_1",
+      "type": "String",
+      "notes": "Roman Name"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Order of upline"
+    }
+  ]
+}

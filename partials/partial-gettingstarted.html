@@ -1,0 +1,51 @@
+<div class="container">
+
+	<div class="col-md-10">
+
+		<h1>Getting Started</h1>
+		<hr>
+		<p>DataTrax Services are a collection of REST-based web services. They are highly flexible and are able to return requested data in a number of different standard data formats. (XML,WDDX,CSV,JSON etc…)</p>
+
+		<p>DataTrax Explorer is a web-based development and testing tool for DataTrax Services. It provides information about each service/method, including accepted parameters, valid input types, required fields, etc… It also provides an interactive way to run the services while choosing different return formats, and demonstrates how to build the URLs to access the specific services.</p>
+
+		<h3>Using Datatrax Services</h3>
+		<hr>
+		<h5>URI Format</h5>
+		<p>To access your company's DataTrax application through DataTrax Services (DTS), you will use a URL consisting of a DTS pathname and several query string field/value pairs. An example of such a URL would be:</p> 
+
+		<p><pre>https://dts.myvoffice.com/<insert client name>pre/dts?SERVICE=Session.ping</pre></p>
+
+		<p>The DTS pathname identifies the particular set of DataTrax databases and software to be accessed. The specific function to be performed is indicated by the value of the "service" query string field.</p>
+
+		<div class="alert alert-warning">Note:  While most hits will be formatted as http GET requests with all data passed through the URL query string, DTS requests can also be made as http POST request with values passed either in the query string or in the posted data.</div>
+
+		<h3>Your application needs 3 things</h3>
+		<hr>
+
+		<ol>
+		    <li>Your issued API Key</li>
+		    <li>A session ID</li>
+		    <li>Credentials to grab a session</li>
+		</ol>
+
+		<h5>API Key</h5>
+		<p>Each http request to DTS must include a query string field (argument) named apikey that set the apikey value supplied by Infotrax. For example the example above would not work because the apikey is not set. A correct example would be:</p>
+
+		<p><pre>https://dts.myvoffice.com/atomicpre/dts?SERVICE=Session.ping&APIKEY=111222</pre></p>
+
+		<h5>Session ID</h5>
+		<p>While a few DTS services are 'stateless' (<code>Session.ping</code> is an example), most services depend on maintaining a session context from one request to the next. Your first service request (within your own application's session) should be a ping or a <code>Session.login</code> (discussed below).  Either of these services will return a data structure containing a field named session.  The value of this field should be saved and submitted with each subsequent DTS request in a field named jsessionid.</p>
+
+		<h5>Credentials</h5>
+		<p>Just as DataTrax and Evo require that users identify themselves with a username and password, most DTS services require user authentication before the request can be processed.  Most applications will authenticate with DTS on behalf of the user of that client application by passing the user id and password of the user to DTS using the <code>Session.login</code> service. DTS will recognize subsequent requests as being from that same authenticated user as long as the session is maintained as described above. A long request might look like this:</p>
+	
+		<p><pre>https://dts.myvoffice.com/<insert client name>pre/dts?service=Session.login&APIKEY=111222&USERID=1001&PASSWORD=dtsR0cks&FORMAT=JSON</pre></p>
+
+		<div class="alert alert-warning">Note: DTS will authenticate the userid and password using DataTrax data.  Generally this will be the same user ids and passwords created for the user in Evo. For batch or other non-user applications, DTS provides for administrative authentications that do not require a Virtual Office account.</div>
+
+
+
+
+
+	</div>
+</div>

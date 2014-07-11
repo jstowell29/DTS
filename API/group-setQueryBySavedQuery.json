@@ -1,0 +1,59 @@
+{
+  "id": "group-setQueryBySavedQuery",
+  "name": "Group.setQueryBySavedQuery",
+  "description": "Set the query of a group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    },
+    {
+      "fieldname": "appName",
+      "type": "String",
+      "notes": "Query application name.  Default is GenQueries."
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "A valid Query ID to use"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": "Detail query string parameter value"
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": "Filter criteria to further limit the group accordingly"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

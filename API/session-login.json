@@ -1,0 +1,29 @@
+{
+  "id": "session-login",
+  "name": "Session.login",
+  "description": "Used to log in a user and return a session ID",
+  "inputs": [
+    {
+      "fieldname": "userID",
+      "type": "String",
+      "notes": "user name"
+    },
+    {
+      "fieldname": "password",
+      "type": "String",
+      "notes": "password"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "roles",
+      "type": "String",
+      "notes": "comma separated list of user's roles"
+    },
+    {
+      "fieldname": "session",
+      "type": "String",
+      "notes": "Session Number to be used with every call"
+    }
+  ]
+}

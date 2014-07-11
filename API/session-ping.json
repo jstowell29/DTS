@@ -1,0 +1,129 @@
+{
+  "id": "session-ping",
+  "name": "Session.ping",
+  "description": "Keeps a session alive and returns information about session",
+  "inputs": [
+    {
+      "fieldname": "noInput",
+      "type": "NoInput",
+      "notes": "Requires no additional input"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "actualServer",
+      "type": "String",
+      "notes": "Server Host Name"
+    },
+    {
+      "fieldname": "cb_rev",
+      "type": "String",
+      "notes": "ColdBox Version"
+    },
+    {
+      "fieldname": "client",
+      "type": "String",
+      "notes": "Client Name"
+    },
+    {
+      "fieldname": "clientRev",
+      "type": "String",
+      "notes": "Client Revision"
+    },
+    {
+      "fieldname": "dts_path",
+      "type": "String",
+      "notes": "DTS Path"
+    },
+    {
+      "fieldname": "dts_rev",
+      "type": "String",
+      "notes": "DTS Revision"
+    },
+    {
+      "fieldname": "environment",
+      "type": "String",
+      "notes": "Live, Test, Preview"
+    },
+    {
+      "fieldname": "host",
+      "type": "String",
+      "notes": "Host Name"
+    },
+    {
+      "fieldname": "https",
+      "type": "String",
+      "notes": "Using HTTPS or not"
+    },
+    {
+      "fieldname": "lastInitTime",
+      "type": "String",
+      "notes": "Last time Initiailzation was performed"
+    },
+    {
+      "fieldname": "loggedIn",
+      "type": "String",
+      "notes": "Logged in status"
+    },
+    {
+      "fieldname": "mappings",
+      "type": "Array",
+      "notes": "Array of config mappings"
+    },
+    {
+      "fieldname": "dtsbase",
+      "type": "String",
+      "notes": "Path of DTS Base"
+    },
+    {
+      "fieldname": "coldbox",
+      "type": "String",
+      "notes": "Path of Coldbox"
+    },
+    {
+      "fieldname": "modules",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "remote_addr",
+      "type": "String",
+      "notes": "IP Adress"
+    },
+    {
+      "fieldname": "roles",
+      "type": "String",
+      "notes": "Roles of user"
+    },
+    {
+      "fieldname": "servercfver",
+      "type": "Numeric",
+      "notes": "CF server version"
+    },
+    {
+      "fieldname": "serverType",
+      "type": "String",
+      "notes": "Server Type"
+    },
+    {
+      "fieldname": "serverver",
+      "type": "String",
+      "notes": "Server Revision"
+    },
+    {
+      "fieldname": "session",
+      "type": "String",
+      "notes": "Session Number"
+    },
+    {
+      "fieldname": "userid",
+      "type": "String",
+      "notes": "User ID"
+    },
+    {
+      "fieldname": "username",
+      "type": "String",
+      "notes": "User Name"
+    }
+  ]
+}

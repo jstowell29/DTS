@@ -1,0 +1,30 @@
+{
+  "GS1": {
+    "DESCRIPTION": "Group Sponsoring",
+    "QUERYTIME": 0.030064,
+    "TOTALMEMBERS": 7695,
+    "PERIOD": {
+      "EXISTS": true,
+      "PERIODTYPE": "PB",
+      "FILE": "TRPB201112",
+      "PERIOD": 201112
+    },
+    "MEMBERSSELECTED": 1585,
+    "FILEID": "",
+    "QRYID": "GS1"
+  },
+  "GS0": {
+    "DESCRIPTION": "Group Sponsoring",
+    "QUERYTIME": 0.027345,
+    "TOTALMEMBERS": 9241,
+    "PERIOD": {
+      "EXISTS": true,
+      "PERIODTYPE": "PB",
+      "FILE": "TRPB201201",
+      "PERIOD": 201201
+    },
+    "MEMBERSSELECTED": 1565,
+    "FILEID": "",
+    "QRYID": "GS0"
+  }
+}

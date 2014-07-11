@@ -1,0 +1,49 @@
+{
+  "id": "group-setName",
+  "name": "Group.setName",
+  "description": "Set name of group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "New Group name"
+    },
+    {
+      "fieldname": "source",
+      "type": "String",
+      "notes": "The source for the audio."
+    },
+    {
+      "fieldname": "sourceType",
+      "type": "String",
+      "notes": "What kind of source is being sent? (MP3, WAV, FLV, or Voice)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

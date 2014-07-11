@@ -1,0 +1,29 @@
+{
+  "id": "group-deleteDefinition",
+  "name": "Group.deleteDefinition",
+  "description": "Delete a group definition",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corporate Id?  Yes or no, default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns PASS or FAIL"
+    }
+  ]
+}

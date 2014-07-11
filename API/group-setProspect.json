@@ -1,0 +1,94 @@
+{
+  "id": "group-setProspect",
+  "name": "Group.setProspect",
+  "description": "Set or save a note or for a person",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Prospect Name"
+    },
+    {
+      "fieldname": "prospectId",
+      "type": "String",
+      "notes": "Prospect Id"
+    },
+    {
+      "fieldname": "address",
+      "type": "String",
+      "notes": "Prospect address"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "Prospect city"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "Prospect state"
+    },
+    {
+      "fieldname": "zip",
+      "type": "String",
+      "notes": "Prospect Zip"
+    },
+    {
+      "fieldname": "country",
+      "type": "String",
+      "notes": "Prospect country"
+    },
+    {
+      "fieldname": "phone",
+      "type": "String",
+      "notes": "Prospect phone"
+    },
+    {
+      "fieldname": "email",
+      "type": "String",
+      "notes": "Prospect email"
+    },
+    {
+      "fieldname": "skypeId",
+      "type": "String",
+      "notes": "Prospect SkypeId"
+    },
+    {
+      "fieldname": "prospectRank",
+      "type": "Numeric",
+      "notes": "Prospect rank"
+    },
+    {
+      "fieldname": "prospectImageUrl",
+      "type": "String",
+      "notes": "Prospect Image URL for each prospect."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

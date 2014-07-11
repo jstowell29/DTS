@@ -1,0 +1,24 @@
+{
+  "id": "distributor-deleteshiptoaddress",
+  "name": "Distributor.deleteShipToAddress",
+  "description": "This will delete a ship to address on file. A distributor ID and sequence number are required.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Sequence Number of ship to address on file"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "This will return an 'OK' if successful"
+    }
+  ]
+}

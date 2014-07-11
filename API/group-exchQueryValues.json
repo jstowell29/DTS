@@ -1,0 +1,49 @@
+{
+  "id": "group-exchQueryValues",
+  "name": "Group.exchQueryValues",
+  "description": "Exchange query indirect values",
+  "inputs": [
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": "Query string"
+    },
+    {
+      "fieldname": "valuePairs",
+      "type": "String",
+      "notes": "Value pairs to replace %NAME%  with value in query string"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "duplicates",
+      "type": "String",
+      "notes": null
+    },
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": null
+    },
+    {
+      "fieldname": "reserved",
+      "type": "String",
+      "notes": null
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": null
+    },
+    {
+      "fieldname": "undefined",
+      "type": "String",
+      "notes": null
+    },
+    {
+      "fieldname": "unused",
+      "type": "String",
+      "notes": null
+    }
+  ]
+}

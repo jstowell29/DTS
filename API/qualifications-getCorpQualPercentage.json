@@ -1,0 +1,49 @@
+{
+  "id": "qualifications-getCorpQualPercentage",
+  "name": "Qualifications.getCorpQualPercentage",
+  "description": "Returns Corporate Volume Numbers based of day and over a specified number of periods",
+  "inputs": [
+    {
+      "fieldname": "PeriodType",
+      "type": "String",
+      "notes": "Period Type, Only PB is currently supported."
+    },
+    {
+      "fieldname": "PVDate",
+      "type": "Numeric",
+      "notes": "Bonus Period in CCYYMM format.  Defaults to current if nothing is passed in."
+    },
+    {
+      "fieldname": "dayofperiod",
+      "type": "Numeric",
+      "notes": "Day of the period.  (1-7 for weekly, 1-31 for monthly)"
+    },
+    {
+      "fieldname": "PeriodCount",
+      "type": "Numeric",
+      "notes": "Number of periods used to Calculate the Corp Average.  Default is 6."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "cvh_average_day_volume",
+      "type": "Numeric",
+      "notes": "Average volume on specified day"
+    },
+    {
+      "fieldname": "cvh_average_day_volume_run",
+      "type": "Numeric",
+      "notes": "Average volume on specified day"
+    },
+    {
+      "fieldname": "cvh_average_period_volume",
+      "type": "Numeric",
+      "notes": "Average Period volume across specified periods"
+    },
+    {
+      "fieldname": "cvh_percent",
+      "type": "Numeric",
+      "notes": "Percent of total volume specified day makes up"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "QUERYTIME": 0.005985,
+  "TOTALMEMBERS": 8771,
+  "PERIOD": {
+    "EXISTS": true,
+    "PERIODTYPE": "PB",
+    "FILE": "TRPB201403",
+    "PERIOD": 201403
+  },
+  "DATA": {
+    "DESCRIPTION": "Summary",
+    "MEMBERSSELECTED": 2844
+  },
+  "FILEID": ""
+}

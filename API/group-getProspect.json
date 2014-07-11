@@ -1,0 +1,74 @@
+{
+  "id": "group-getProspect",
+  "name": "Group.getProspect",
+  "description": "Returns a prospect's information",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    },
+    {
+      "fieldname": "prospectId",
+      "type": "String",
+      "notes": "Prospect Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "ID of prospect"
+    },
+    {
+      "fieldname": "entryDate",
+      "type": "Numeric",
+      "notes": "Entry date of prospect"
+    },
+    {
+      "fieldname": "new",
+      "type": "String",
+      "notes": "If the prospect is new in the current period"
+    },
+    {
+      "fieldname": "notes",
+      "type": "String",
+      "notes": "If the prospect has a note"
+    },
+    {
+      "fieldname": "noteText",
+      "type": "String",
+      "notes": "Text of the note"
+    },
+    {
+      "fieldname": "pflag",
+      "type": "String",
+      "notes": "Qualifying flag"
+    },
+    {
+      "fieldname": "prospectImageURL",
+      "type": "String",
+      "notes": "URL of prospect image"
+    },
+    {
+      "fieldname": "prospectRank",
+      "type": "Numeric",
+      "notes": "Rank on quality of lead"
+    },
+    {
+      "fieldname": "prospectType",
+      "type": "String",
+      "notes": "Type of prospect"
+    }
+  ]
+}

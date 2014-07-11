@@ -1,0 +1,49 @@
+{
+  "id": "webmeeting-getwebmeetinglist",
+  "name": "WebMeeting.getWebMeetingList",
+  "description": "Returns a list of Web Meetings for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID of person to list WebMeetings"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Mark whether or not this is a corporate user. Yes or No."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "descr",
+      "type": "String",
+      "notes": "Web Meeting description"
+    },
+    {
+      "fieldname": "end_dt",
+      "type": "String",
+      "notes": "End date of Web Meeting"
+    },
+    {
+      "fieldname": "id",
+      "type": "Numeric",
+      "notes": "Web Meeting ID Number"
+    },
+    {
+      "fieldname": "listen_url",
+      "type": "String",
+      "notes": "URL to listen to Web Meeting"
+    },
+    {
+      "fieldname": "start_dt",
+      "type": "String",
+      "notes": "Start date of Web Meeting"
+    },
+    {
+      "fieldname": "title",
+      "type": "String",
+      "notes": "Title of Web Meeting"
+    }
+  ]
+}

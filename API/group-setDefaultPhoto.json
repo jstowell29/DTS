@@ -1,0 +1,39 @@
+{
+  "id": "group-setDefaultPhoto",
+  "name": "Group.setDefaultPhoto",
+  "description": "Set the default group photo url",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    },
+    {
+      "fieldname": "photoId",
+      "type": "String",
+      "notes": "New default Photo Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "description"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

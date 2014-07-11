@@ -1,0 +1,39 @@
+{
+  "id": "group-addPhoto",
+  "name": "Group.addPhoto",
+  "description": "Add a photo to a group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corporate Id?  Yes or no, default is no."
+    },
+    {
+      "fieldname": "photoId",
+      "type": "String",
+      "notes": "New group photo Id"
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id"
+    },
+    {
+      "fieldname": "PhotoUrl",
+      "type": "String",
+      "notes": "New group photo"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

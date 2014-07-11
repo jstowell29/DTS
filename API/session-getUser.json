@@ -1,0 +1,44 @@
+{
+  "id": "session-getUser",
+  "name": "Session.getUser",
+  "description": "Returns user information about a session",
+  "inputs": [
+    {
+      "fieldname": "NoInput",
+      "type": "NoInput",
+      "notes": "Requires no additional parameters. Determines information based off of sessionid"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "Country Code Of User"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "roles",
+      "type": "String",
+      "notes": "User Roles"
+    },
+    {
+      "fieldname": "userId",
+      "type": "String",
+      "notes": "User ID (Usually Dist ID)"
+    },
+    {
+      "fieldname": "userName",
+      "type": "String",
+      "notes": "Users Name"
+    },
+    {
+      "fieldname": "validated",
+      "type": "Boolean",
+      "notes": "If User is validated or not"
+    }
+  ]
+}

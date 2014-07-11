@@ -1,0 +1,94 @@
+{
+  "id": "genealogy-genealogyDetailbySavedQuery",
+  "name": "Genealogy.genealogyDetailBySavedQuery",
+  "description": "Returns FastTree saved reports in line detail format.",
+  "inputs": [
+    {
+      "fieldname": "appname",
+      "type": "String",
+      "notes": "Query application name, default is DistInfo"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group name, default is DistInfo"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "Report ID, default is PerInfo"
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "Additional FastTree parameters"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Used for paging, which record to start from"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many records to limit per page"
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": "FastTree filter criteria (example vol1>100)"
+    },
+    {
+      "fieldname": "sortFields",
+      "type": "String",
+      "notes": "Fields to sort on"
+    },
+    {
+      "fieldname": "sortDirections",
+      "type": "String",
+      "notes": "U for Up or D for Down. Sort the field ascending or descending."
+    },
+    {
+      "fieldname": "sortTypes",
+      "type": "Boolean",
+      "notes": "Yes or No. Default is No. This will create a temp file of the requested data for even faster reporting."
+    },
+    {
+      "fieldname": "searchField",
+      "type": "String",
+      "notes": "Field to perform search on (example: name)"
+    },
+    {
+      "fieldname": "searchValue",
+      "type": "String",
+      "notes": "Search term (example: Infotrax* will return anyone starting with Infotrax)"
+    },
+    {
+      "fieldname": "searchStart",
+      "type": "String",
+      "notes": "which record to begin search on."
+    },
+    {
+      "fieldname": "fileID",
+      "type": "String",
+      "notes": "Temp file ID returned from genealogyBySavedQuery"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "reportDetail",
+      "type": "String",
+      "notes": "The fields returned will depend on the fields specified in the FastTree report"
+    }
+  ]
+}

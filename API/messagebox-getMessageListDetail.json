@@ -1,0 +1,194 @@
+{
+  "id": "messagebox-getMessageList",
+  "name": "MessageBox.getMessageList",
+  "description": "If run in detail mode returns entire message list for a user. If not run in detail mode then returns summary information of mailbox",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valid values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "detail",
+      "type": "Numeric",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Which message number to start at"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many records to return at a time"
+    },
+    {
+      "fieldname": "selection",
+      "type": "String",
+      "notes": "Always set this to "
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "Message ID when run in detail mode"
+    },
+    {
+      "fieldname": "days",
+      "type": "Numeric",
+      "notes": "How many days to include of messages"
+    },
+    {
+      "fieldname": "tVersion",
+      "type": "String",
+      "notes": "Always set to "
+    },
+    {
+      "fieldname": "showNonMessages",
+      "type": "String",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "ID of message Box To Use"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "corp",
+      "type": "String",
+      "notes": "If this is set to “Y” then it came from the corporate company."
+    },
+    {
+      "fieldname": "count",
+      "type": "Numeric",
+      "notes": "This is the total number of messages in the inbox. This will be returned on every line"
+    },
+    {
+      "fieldname": "date",
+      "type": "Numeric",
+      "notes": "This is the date the message was sent"
+    },
+    {
+      "fieldname": "email",
+      "type": "String",
+      "notes": "Email address of the person who sent the message (for informational purposes)"
+    },
+    {
+      "fieldname": "forward",
+      "type": "String",
+      "notes": "Y or N if the message can be forwarded or not."
+    },
+    {
+      "fieldname": "fxlength",
+      "type": "Numeric",
+      "notes": "Attachment length if it’s a recording"
+    },
+    {
+      "fieldname": "fxmsgid",
+      "type": "Numeric",
+      "notes": "Attachment ID"
+    },
+    {
+      "fieldname": "fxmsgtyp",
+      "type": "String",
+      "notes": "This will tell if the message has an attachment. If the value is “F” it is a PDF file. If it is “C”, then it is a WebMeeting. If it is a “V”, then it is an mp3."
+    },
+    {
+      "fieldname": "id",
+      "type": "Numeric",
+      "notes": "This is the unique ID number of the person that sent the message"
+    },
+    {
+      "fieldname": "length",
+      "type": "Numeric",
+      "notes": "Length of the voice message"
+    },
+    {
+      "fieldname": "mbox",
+      "type": "Numeric",
+      "notes": "Mailbox number"
+    },
+    {
+      "fieldname": "mediaid",
+      "type": "Numeric",
+      "notes": "ID of external media number"
+    },
+    {
+      "fieldname": "msgid",
+      "type": "Numeric",
+      "notes": "This will be the unique message ID of each individual message in the list"
+    },
+    {
+      "fieldname": "msgtyp",
+      "type": "String",
+      "notes": "This is what type of message it is. “T” for text and “V” for voice or audio (e.g. mp3)"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of the person who sent the message"
+    },
+    {
+      "fieldname": "oDate",
+      "type": "Numeric",
+      "notes": "Date message was opened"
+    },
+    {
+      "fieldname": "reply",
+      "type": "String",
+      "notes": "If this is set to “N”, then the message cannot be replied to"
+    },
+    {
+      "fieldname": "sDate",
+      "type": "Numeric",
+      "notes": "This is the date the message was sent"
+    },
+    {
+      "fieldname": "stat",
+      "type": "String",
+      "notes": "“PASS” or “FAIL”"
+    },
+    {
+      "fieldname": "title",
+      "type": "String",
+      "notes": "This is the summary of the message or the subject"
+    },
+    {
+      "fieldname": "txmsgid",
+      "type": "Numeric",
+      "notes": "Title message ID"
+    },
+    {
+      "fieldname": "typ",
+      "type": "String",
+      "notes": "This marks if it has been read or not. If the message is an “S” then it has been read. “N” is new."
+    },
+    {
+      "fieldname": "urgnt",
+      "type": "String",
+      "notes": "This flags says if the message is urgent or not"
+    },
+    {
+      "fieldname": "urlfxmsg",
+      "type": "String",
+      "notes": "This will be the URL to the attachment. Below is an example URL of each kind of attachment"
+    },
+    {
+      "fieldname": "urlmsg",
+      "type": "String",
+      "notes": "This is the URL to the primary text or the voice of the message.  Here is an example of what the URL will look like. It will be earthier a text or mp3."
+    },
+    {
+      "fieldname": "urlphoto",
+      "type": "String",
+      "notes": "This is the image of the person that sent the message"
+    }
+  ]
+}

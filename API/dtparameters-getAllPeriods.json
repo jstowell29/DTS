@@ -1,0 +1,55 @@
+{
+  "id": "dtparameters-getAllPeriods",
+  "name": "DtParameters.getAllPeriods",
+  "description": "Returns company volume period definitions.",
+  "inputs": [
+    {
+      "fieldname": "NoInput",
+      "type": "NoInput",
+      "notes": "No Input Required"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "default_pv_date",
+      "type": "Numeric",
+      "notes": "default volume period"
+    },
+    {
+      "fieldname": "last_comm_pv_date",
+      "type": "Numeric",
+      "notes": "last commission volume period"
+    },
+    {
+      "fieldname": "last_secondary_pv_date",
+      "type": "Numeric",
+      "notes": "last secondary commission volume period"
+    },
+    {
+      "fieldname": "last_tertiary_pv_date",
+      "type": "Numeric",
+      "notes": "last tertiary volume period"
+    },
+    {
+      "fieldname": "max_period",
+      "type": "Numeric",
+      "notes": "max number of periods per year"
+    },
+    {
+      "fieldname": "max_secondary_period",
+      "type": "Numeric",
+      "notes": "max number of secondary periods per year"
+    },
+    {
+      "fieldname": "max_tertiary_period",
+      "type": "Numeric",
+      "notes": "max number of tertiary periods per year"
+    },
+    {
+      "fieldname": "tertiary_check_date",
+      "type": "Numeric",
+      "notes": "tertiary check date"
+    }
+  ],
+  "url": "http://dts.myvoffice.com/clientname/dts/index.cfm;jsessionid=**sessionId**?service=DTParameters.getAllPeriods&apikey=**APIKEY**&format=JSON"
+}

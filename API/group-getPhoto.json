@@ -1,0 +1,34 @@
+{
+  "id": "group-getPhoto",
+  "name": "Group.getPhoto",
+  "description": "Returns the URL for a photo",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "photoId",
+      "type": "String",
+      "notes": "Photo Id.  Blank for all."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of filepath of photo"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

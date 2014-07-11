@@ -1,0 +1,25 @@
+{
+  "id": "dtparameters-getRanks",
+  "name": "DtParameters.getRanks",
+  "description": "Get Rank Name",
+  "inputs": [
+    {
+      "fieldname": "usedCasheData",
+      "type": "Boolean",
+      "notes": "Use cached copy of ranks table",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "rank",
+      "type": "Array",
+      "notes": "Returns an array of rank numbers"
+    },
+    {
+      "fieldname": "rank_name",
+      "type": "Array",
+      "notes": "Returns an array of rank names"
+    }
+  ]
+}

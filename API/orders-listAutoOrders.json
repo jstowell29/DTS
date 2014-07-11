@@ -1,0 +1,104 @@
+{
+  "id": "orders-listAutoOrders",
+  "name": "Orders.listAutoOrders",
+  "description": "Returns a list of autoship templates for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "auto_batch",
+      "type": "Numeric",
+      "notes": "Batch Autoship Belongs To"
+    },
+    {
+      "fieldname": "auto_next_run_date",
+      "type": "Numeric",
+      "notes": "Next Run Date of Autoship if using Next Run Date"
+    },
+    {
+      "fieldname": "cv_amount",
+      "type": "Numeric",
+      "notes": "Commission Volume Amount (price 4)"
+    },
+    {
+      "fieldname": "date_last_gen",
+      "type": "Numeric",
+      "notes": "Date of last generated date"
+    },
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "entry_date",
+      "type": "Numeric",
+      "notes": "Entry Date of template"
+    },
+    {
+      "fieldname": "order_number",
+      "type": "Numeric",
+      "notes": "Order Number of template"
+    },
+    {
+      "fieldname": "price_6",
+      "type": "Numeric",
+      "notes": "Price 6 amount"
+    },
+    {
+      "fieldname": "pv_amount",
+      "type": "Numeric",
+      "notes": "Personal Volume Amount (price 2)"
+    },
+    {
+      "fieldname": "pv_period",
+      "type": "Numeric",
+      "notes": "Volume Period YYYYMM"
+    },
+    {
+      "fieldname": "pv_year",
+      "type": "Numeric",
+      "notes": "Volume Period Year"
+    },
+    {
+      "fieldname": "ship_day",
+      "type": "Numeric",
+      "notes": "Ship Day 1 through 31"
+    },
+    {
+      "fieldname": "ship_to_country",
+      "type": "String",
+      "notes": "Ship To Country"
+    },
+    {
+      "fieldname": "ship_to_name",
+      "type": "String",
+      "notes": "Ship To Name"
+    },
+    {
+      "fieldname": "start_date",
+      "type": "Numeric",
+      "notes": "Start Date Template should take effect"
+    },
+    {
+      "fieldname": "status",
+      "type": "Numeric",
+      "notes": "Status of Autoship (1 = Active, 2 = Cancelled, 3 = Business Protect, 9 = Deleted"
+    },
+    {
+      "fieldname": "tot_invoice_amount",
+      "type": "Numeric",
+      "notes": "Order Total Amount"
+    },
+    {
+      "fieldname": "type",
+      "type": "Numeric",
+      "notes": "Defaults to 1"
+    }
+  ]
+}

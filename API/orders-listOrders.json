@@ -1,0 +1,149 @@
+{
+  "id": "orders-listOrders",
+  "name": "Orders.listOrders",
+  "description": "Returns a list of orders by period for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId1",
+      "type": "Numeric",
+      "notes": "Start Dist ID Number"
+    },
+    {
+      "fieldname": "distId2",
+      "type": "Numeric",
+      "notes": "Dist ID number of someone in downline, use same ID as distID1 for self"
+    },
+    {
+      "fieldname": "start_pvdate",
+      "type": "Numeric",
+      "notes": "Start Volume Period Date"
+    },
+    {
+      "fieldname": "end_pvdate",
+      "type": "Numeric",
+      "notes": "End Volume Period Date"
+    },
+    {
+      "fieldname": "returnFields",
+      "type": "String",
+      "notes": "Comma Separated List of Fields to Return"
+    },
+    {
+      "fieldname": "count",
+      "type": "Numeric",
+      "notes": "Number of records to return"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "carrier",
+      "type": "String",
+      "notes": "Shipping Carrier"
+    },
+    {
+      "fieldname": "currencyCode",
+      "type": "String",
+      "notes": "Order Currency Code"
+    },
+    {
+      "fieldname": "cvAmount",
+      "type": "Numeric",
+      "notes": "Commission Volume Amount"
+    },
+    {
+      "fieldname": "displayName1",
+      "type": "String",
+      "notes": "Display Name"
+    },
+    {
+      "fieldname": "entryDate",
+      "type": "Numeric",
+      "notes": "Entry Date of Order"
+    },
+    {
+      "fieldname": "entryInit",
+      "type": "String",
+      "notes": "Entry Initials Of Order"
+    },
+    {
+      "fieldname": "nativeName1",
+      "type": "String",
+      "notes": "Native Name"
+    },
+    {
+      "fieldname": "orderNumber",
+      "type": "Numeric",
+      "notes": "Order Number"
+    },
+    {
+      "fieldname": "orderSource",
+      "type": "Numeric",
+      "notes": "Order Source (100 = DataTrax, 900 = Internet)"
+    },
+    {
+      "fieldname": "price6",
+      "type": "Numeric",
+      "notes": "Price 6 amount"
+    },
+    {
+      "fieldname": "pvAmount",
+      "type": "Numeric",
+      "notes": "Price 2 Amount Personal Volume"
+    },
+    {
+      "fieldname": "pvPeriod",
+      "type": "Numeric",
+      "notes": "Volume Period YYYYMM"
+    },
+    {
+      "fieldname": "pvYear",
+      "type": "Numeric",
+      "notes": "Volume Period Year"
+    },
+    {
+      "fieldname": "romanName1",
+      "type": "String",
+      "notes": "Roman Name"
+    },
+    {
+      "fieldname": "shipToCountry",
+      "type": "String",
+      "notes": "Ship To Country"
+    },
+    {
+      "fieldname": "shipToName",
+      "type": "String",
+      "notes": "Ship To Name"
+    },
+    {
+      "fieldname": "shipViaDesc",
+      "type": "String",
+      "notes": "Ship Via Description (Ground, Next Day, etc)"
+    },
+    {
+      "fieldname": "status",
+      "type": "Numeric",
+      "notes": "Order Status (1 through 5)"
+    },
+    {
+      "fieldname": "totInvceAmount",
+      "type": "Numeric",
+      "notes": "Total Order Amout"
+    },
+    {
+      "fieldname": "trkNo",
+      "type": "String",
+      "notes": "Shipping tracking number"
+    },
+    {
+      "fieldname": "type",
+      "type": "String",
+      "notes": "I = Wholesale, D = Retail"
+    },
+    {
+      "fieldname": "verifyDate",
+      "type": "Numeric",
+      "notes": "Date Ship verified"
+    }
+  ]
+}

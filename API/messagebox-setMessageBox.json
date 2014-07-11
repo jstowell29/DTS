@@ -1,0 +1,54 @@
+{
+  "id": "distributor-setMessageBox",
+  "name": "Distributor.setMessageBox",
+  "description": "Sets details of a message box. Will also create a new message box if no “boxId” is passed",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "Box ID of message box"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of the box"
+    },
+    {
+      "fieldname": "number",
+      "type": "Numeric",
+      "notes": "Phone number to assign to message box"
+    },
+    {
+      "fieldname": "timeZone",
+      "type": "Numeric",
+      "notes": "Time zone of message box ("
+    },
+    {
+      "fieldname": "pin",
+      "type": "String",
+      "notes": "Evo Password or Toll Free PIN"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "B"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS"
+    }
+  ]
+}

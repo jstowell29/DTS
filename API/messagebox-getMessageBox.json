@@ -1,0 +1,49 @@
+{
+  "id": "messagebox-getMessageBox",
+  "name": "MessageBox.getMessageBox",
+  "description": "Returns a list of message inbox IDs and details.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "timeZone",
+      "type": "Numeric",
+      "notes": "This must be specified and is in the format NNNNNN"
+    },
+    {
+      "fieldname": "pin",
+      "type": "Numeric",
+      "notes": "Password of persons account"
+    },
+    {
+      "fieldname": "boxId",
+      "type": "Numeric",
+      "notes": "Number between 0-255"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "mbox",
+      "type": "Numeric",
+      "notes": "Mailbox ID"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of the mailbox"
+    },
+    {
+      "fieldname": "numbers",
+      "type": "Array",
+      "notes": "An array of toll free numbers associated with mailbox"
+    }
+  ]
+}

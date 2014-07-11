@@ -1,0 +1,115 @@
+{
+  "id": "distributor-getShipToAddresses",
+  "name": "Distributor.getShipToAddresses",
+  "description": "Returns all ship-to addresses for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "addr_1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "addr_2",
+      "type": "String",
+      "notes": "Apartment or Suite Number"
+    },
+    {
+      "fieldname": "addr_3",
+      "type": "String",
+      "notes": "City, State Postal Code"
+    },
+    {
+      "fieldname": "addr_4",
+      "type": "String",
+      "notes": "Misc Address Field"
+    },
+    {
+      "fieldname": "city",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "city_limits",
+      "type": "String",
+      "notes": "Returns I or O, depending on inside or outside city limits"
+    },
+    {
+      "fieldname": "comm_flag",
+      "type": "String",
+      "notes": "Commission flag"
+    },
+    {
+      "fieldname": "cou",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Ship-to address description"
+    },
+    {
+      "fieldname": "geo",
+      "type": "String",
+      "notes": "Geo Code"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Ship-to Name"
+    },
+    {
+      "fieldname": "num",
+      "type": "Numeric",
+      "notes": "Number"
+    },
+    {
+      "fieldname": "phone_1",
+      "type": "Numeric",
+      "notes": "Phone 1 Field"
+    },
+    {
+      "fieldname": "phone_2",
+      "type": "Numeric",
+      "notes": "Phone 2 Field"
+    },
+    {
+      "fieldname": "phone_3",
+      "type": "Numeric",
+      "notes": "Phone 3 Field"
+    },
+    {
+      "fieldname": "qerror",
+      "type": "String",
+      "notes": "Error Field"
+    },
+    {
+      "fieldname": "seq",
+      "type": "Numeric",
+      "notes": "Ship-to Sequence Number for multiple addresses"
+    },
+    {
+      "fieldname": "spouse",
+      "type": "String",
+      "notes": "Ship-to Spouse Name"
+    },
+    {
+      "fieldname": "state",
+      "type": "String",
+      "notes": "2 letter state code"
+    },
+    {
+      "fieldname": "zip",
+      "type": "String",
+      "notes": "Postal Code"
+    }
+  ]
+}

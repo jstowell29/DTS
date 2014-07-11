@@ -1,0 +1,24 @@
+{
+  "id": "orders-setAutoOrderNextProcDate",
+  "name": "Orders.setAutoOrderNextProcDate",
+  "description": "Sets the next run date for an autoship template.",
+  "inputs": [
+    {
+      "fieldname": "odhNumber",
+      "type": "Numeric",
+      "notes": "Autoship Template Order Number"
+    },
+    {
+      "fieldname": "next_run_date",
+      "type": "Numerc",
+      "notes": "The autoship next date to process (format YYYYMMDD)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return "
+    }
+  ]
+}

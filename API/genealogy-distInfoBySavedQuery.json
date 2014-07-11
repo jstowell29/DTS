@@ -1,0 +1,39 @@
+{
+  "id": "genealogy-distInfoBySavedQuery",
+  "name": "Genealogy.distInfoBySavedQuery",
+  "description": "Returns distributor information for a single member based off of a FastTree saved report.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "appname",
+      "type": "String",
+      "notes": "Query application name, default is DistInfo"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group name, default is DistInfo"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "Report ID, default is PerInfo"
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "Additional FastTree parameters"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "fastTree fields",
+      "type": "String",
+      "notes": "Fields returned depends on the definition of the FastTree saved report"
+    }
+  ]
+}

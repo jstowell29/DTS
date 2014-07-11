@@ -1,0 +1,129 @@
+{
+  "id": "group-getIdsBySavedQuery",
+  "name": "Group.getIdsBySavedQuery",
+  "description": "Get Ids that also match saved query",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Identifies the group owner, a distributor."
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "returnIds",
+      "type": "Boolean",
+      "notes": "Return the Ids (yes) or just set them to return later (no)?"
+    },
+    {
+      "fieldname": "appName",
+      "type": "String",
+      "notes": "Query application name. Default is GenQueries."
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "A valid saved Query ID"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": "Detail query string parameter value."
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "&Name=Value pairs to replace %NAME% with value in query string"
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": "filter criteria to limit return list accordingly"
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id to use as a basis for returned IDs"
+    },
+    {
+      "fieldname": "includeList",
+      "type": "String",
+      "notes": "Comma separated list of IDs to include regardless of other qualifications"
+    },
+    {
+      "fieldname": "fields",
+      "type": "String",
+      "notes": "Fields to include in generated list."
+    },
+    {
+      "fieldname": "reqfields",
+      "type": "String",
+      "notes": "In the GCOUNT; otherwise they are in the BCOUNT"
+    },
+    {
+      "fieldname": "fileId",
+      "type": "String",
+      "notes": "A list of IDs returned from previous call to reuse"
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Starting Index"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many to return at a time."
+    },
+    {
+      "fieldname": "requestVerifyGeneology",
+      "type": "Boolean",
+      "notes": "Yes or no.  Is geneology validation requested on includeListIDs?"
+    },
+    {
+      "fieldname": "sortFields",
+      "type": "String",
+      "notes": "Comma separated list.  Fields to sort on."
+    },
+    {
+      "fieldname": "sortDirections",
+      "type": "String",
+      "notes": "Comma separated lists.  Corresponds to sortFields.  Sort (U)p or (D)own."
+    },
+    {
+      "fieldname": "sortTypes",
+      "type": "String",
+      "notes": "Corresponds to sortFields.  Sort type list either (N)umeric or (A)lpha."
+    },
+    {
+      "fieldname": "searchField",
+      "type": "String",
+      "notes": "Search on this field."
+    },
+    {
+      "fieldname": "search Value",
+      "type": "String",
+      "notes": "Search for this value in the searchField."
+    },
+    {
+      "fieldname": "searchStart",
+      "type": "String",
+      "notes": "Search and position start to the searchField."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "fastTreeFields",
+      "type": "String",
+      "notes": "The return fields will be dependent on the FastTree query"
+    }
+  ]
+}

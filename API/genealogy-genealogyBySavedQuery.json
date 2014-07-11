@@ -1,0 +1,129 @@
+{
+  "id": "genealogy-genealogyBySavedQuery",
+  "name": "Genealogy.genealogyBySavedQuery",
+  "description": "Returns FastTree saved reports in group and summary format.",
+  "inputs": [
+    {
+      "fieldname": "appname",
+      "type": "String",
+      "notes": "Query application name, default is DistInfo"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group name, default is DistInfo"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "Report ID, default is PerInfo"
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "Additional FastTree parameters"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "sortedArray",
+      "type": "Boolean",
+      "notes": ""
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "sortFields",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "sortDirections",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "sortTypes",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "createTempFile",
+      "type": "Boolean",
+      "notes": "Yes or No. Default is No. This will create a temp file of the requested data for even faster reporting."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "reportName",
+      "type": "Array",
+      "notes": "An array of the FastTree report details"
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "FastTree report name"
+    },
+    {
+      "fieldname": "fileId",
+      "type": "String",
+      "notes": "Files referenced by FastTree report"
+    },
+    {
+      "fieldname": "membersSelected",
+      "type": "Numeric",
+      "notes": "Count of members who meet filter criteria from FastTree report"
+    },
+    {
+      "fieldname": "period",
+      "type": "Array",
+      "notes": "Array of period information"
+    },
+    {
+      "fieldname": "exists",
+      "type": "Boolean",
+      "notes": "Yes or No if FastTree file exists"
+    },
+    {
+      "fieldname": "file",
+      "type": "String",
+      "notes": "FastTree file being accessed"
+    },
+    {
+      "fieldname": "period",
+      "type": "Numeric",
+      "notes": "Volume period (YYYYMM)"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "PB for primary bonus, SB for secondary bonus, TB for tertiary bonus"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "FastTree report ID"
+    },
+    {
+      "fieldname": "queryTime",
+      "type": "Numeric",
+      "notes": "Time it took to complete query"
+    },
+    {
+      "fieldname": "totalMembers",
+      "type": "Numeric",
+      "notes": "Count of total members in specified member's downline"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ftadmin-getFieldInfo",
+  "name": "ftAdmin.getFieldInfo",
+  "description": "Returns Available Fields For A FastTree File",
+  "inputs": [
+    {
+      "fieldname": "file",
+      "type": "String",
+      "notes": "FastTree File Name ($CURR, TRDSTGEN, TRPB201305, etc)",
+      "required": true
+    },
+    {
+      "fieldname": "transpose",
+      "type": "String",
+      "notes": "Yes or No, this is for formatting csv return"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "alias",
+      "type": "String",
+      "notes": "alias for field name in database"
+    },
+    {
+      "fieldname": "count",
+      "type": "Numeric",
+      "notes": "Number of records with this field populated"
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "Description of the Field"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of the actual field"
+    },
+    {
+      "fieldname": "pic",
+      "type": "String",
+      "notes": "Field Length"
+    },
+    {
+      "fieldname": "type",
+      "type": "String",
+      "notes": "Field Type"
+    }
+  ]
+}

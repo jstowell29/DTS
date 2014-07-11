@@ -1,0 +1,19 @@
+{
+  "id": "genealogy-testIsInUpline",
+  "name": "Genealogy.testIsInUpline",
+  "description": "Tests if a person is in the current sessions user's upline",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "genealogy-treeReport",
+  "name": "Genealogy.treeReport",
+  "description": "Runs an ad-hoc FastTree detail report.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "files",
+      "type": "String",
+      "notes": "FastTree files comma separated"
+    },
+    {
+      "fieldname": "qstr",
+      "type": "String",
+      "notes": "Filter criteria (example: vol1>100)"
+    },
+    {
+      "fieldname": "returnFields",
+      "type": "String",
+      "notes": "Fields to be returned in the report"
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Record to start from"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "Number of records to limit per page"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "reportDetail",
+      "type": "String",
+      "notes": "This depends on the return fields requested in the report"
+    }
+  ]
+}

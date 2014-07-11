@@ -1,0 +1,37 @@
+{
+  "id": "earnings-bonusHistory",
+  "name": "Earnings.bonusHistory",
+  "description": "Uses a FastTree query to return bonus volume history",
+  "inputs": [
+    {
+      "fieldname": "appName",
+      "type": "String",
+      "notes": "FastTree application name ("
+    },
+    {
+      "fieldname": "queryGroup",
+      "type": "String",
+      "notes": "FastTree query group"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "FastTree query ID default "
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Record to start with"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "Limit how many records are returned"
+    }
+  ]
+}

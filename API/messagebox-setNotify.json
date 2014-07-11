@@ -1,0 +1,64 @@
+{
+  "id": "messagebox-setNotify",
+  "name": "Messagebox.setNotify",
+  "description": "Set notification status for a user",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valid values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of this notification entry (e.g. my-notification, mynotification, my.notification)"
+    },
+    {
+      "fieldname": "data",
+      "type": "String",
+      "notes": "phone number or email address"
+    },
+    {
+      "fieldname": "dataType",
+      "type": "String",
+      "notes": "Options include 'Email', 'Phone', 'SMS'"
+    },
+    {
+      "fieldname": "order",
+      "type": "Numeric",
+      "notes": "Order of this entry, sequence number. Set the order in which to notify the user."
+    },
+    {
+      "fieldname": "newName",
+      "type": "String",
+      "notes": "Used when renaming the notify entry"
+    },
+    {
+      "fieldname": "frequency",
+      "type": "Numeric",
+      "notes": "Frequency in hours how often will receive notification"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Options inlucde 'A' for Active, 'I' for Inactive, 'D' for Delete"
+    },
+    {
+      "fieldname": "stop",
+      "type": "Boolean",
+      "notes": "'Yes' or 'No'. This will be the end of notifications when a notification is sent to this notification entry."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

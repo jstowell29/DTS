@@ -1,0 +1,24 @@
+{
+  "id": "genealogy-isInDownline",
+  "name": "Genealogy.isInDownline",
+  "description": "Checks to see if a person is in another member's downline.",
+  "inputs": [
+    {
+      "fieldname": "targetDistId",
+      "type": "Numeric",
+      "notes": "ID number of person you want to check"
+    },
+    {
+      "fieldname": "sourceDistId",
+      "type": "Numeric",
+      "notes": "ID of member's downline to check"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "Boolean",
+      "notes": "Returns True or False"
+    }
+  ]
+}

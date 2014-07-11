@@ -1,0 +1,48 @@
+{
+  "id": "distributor-search",
+  "name": "Distributor.search",
+  "description": "Search FastTree downline for a member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number to search their downline.",
+      "required": "true"
+    },
+    {
+      "fieldname": "fieldName",
+      "type": "String",
+      "notes": "Field name to search on.",
+      "required": "true"
+    },
+    {
+      "fieldname": "searchString",
+      "type": "String",
+      "notes": "String to search for. Example bob* will return anyone who's name begins with bob.",
+      "required": "true"
+    },
+    {
+      "fieldname": "maxResult",
+      "type": "Numeric",
+      "notes": "Max Number of Results to Return"
+    },
+    {
+      "fieldname": "tree",
+      "type": "String",
+      "notes": "FastTree files to search TRDSTGEN for enroller, $CURR for sponsor.",
+      "required": "true"
+    },
+    {
+      "fieldname": "returnFields",
+      "type": "String",
+      "notes": "Comma separated list of fields to be returned"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "fastTreeFields",
+      "type": "String",
+      "notes": "These will be fields specified in the returnFields parameter. Or default to fieldName."
+    }
+  ]
+}

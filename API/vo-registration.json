@@ -1,0 +1,114 @@
+{
+  "id": "vo-registration",
+  "name": "Vo.registration",
+  "description": "Used to register a member for an Evo account.",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "PASSWORD",
+      "type": "String",
+      "notes": "Between 4 and 15 characters made only of numbers and letters.  Cannot be the same as username."
+    },
+    {
+      "fieldname": "USERLANGUAGE",
+      "type": "String",
+      "notes": "Language ID"
+    },
+    {
+      "fieldname": "SERVICELEVELID",
+      "type": "Numeric",
+      "notes": "Service level package ID"
+    },
+    {
+      "fieldname": "TIMEZONE",
+      "type": "Numeric",
+      "notes": "Timezone code"
+    },
+    {
+      "fieldname": "PAYMENTTYPE",
+      "type": "String",
+      "notes": "Payment type"
+    },
+    {
+      "fieldname": "BILL_FIRST_NAME",
+      "type": "String",
+      "notes": "Bill to first name"
+    },
+    {
+      "fieldname": "BILL_LAST_NAME",
+      "type": "String",
+      "notes": "Bill to last name"
+    },
+    {
+      "fieldname": "BILLADDRESS1",
+      "type": "String",
+      "notes": "Bill to address 1st line"
+    },
+    {
+      "fieldname": "BILLADDRESS2",
+      "type": "String",
+      "notes": "Bill to address 2nd line"
+    },
+    {
+      "fieldname": "BILLCITY",
+      "type": "String",
+      "notes": "Bill to city"
+    },
+    {
+      "fieldname": "BILLSTATE",
+      "type": "String",
+      "notes": "Bill to state"
+    },
+    {
+      "fieldname": "BILLPOSTALCODE",
+      "type": "String",
+      "notes": "Bill to postal code"
+    },
+    {
+      "fieldname": "BILLCOUNTRY",
+      "type": "String",
+      "notes": "Bill to country"
+    },
+    {
+      "fieldname": "BILL_EMAIL",
+      "type": "String",
+      "notes": "Bill to email"
+    },
+    {
+      "fieldname": "BILL_PHONE",
+      "type": "String",
+      "notes": "Bill to phone"
+    },
+    {
+      "fieldname": "IP_ADDR",
+      "type": "String",
+      "notes": "Bill to IP address"
+    },
+    {
+      "fieldname": "CARDNAME",
+      "type": "Numeric",
+      "notes": "Name on card"
+    },
+    {
+      "fieldname": "CARDNUMBER",
+      "type": "Numeric",
+      "notes": "Credit card number"
+    },
+    {
+      "fieldname": "CARDEXP",
+      "type": "Numeric",
+      "notes": "CC expiration (YYYYMM)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

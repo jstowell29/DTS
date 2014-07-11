@@ -1,0 +1,304 @@
+{
+  "id": "distributor-update",
+  "name": "Distributor.update",
+  "description": "Update Member Information",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID, This is assigned automatically"
+    },
+    {
+      "fieldname": "FORM_TYPE",
+      "type": "String",
+      "notes": "D for Distributor, P for Preferred, C for Customer"
+    },
+    {
+      "fieldname": "NAME",
+      "type": "String",
+      "notes": "Name (Last, First)"
+    },
+    {
+      "fieldname": "NATIVE_NAME",
+      "type": "String",
+      "notes": "Native Name"
+    },
+    {
+      "fieldname": "UID",
+      "type": "String",
+      "notes": "Government ID"
+    },
+    {
+      "fieldname": "RCR2_RCN",
+      "type": "String",
+      "notes": "Other ID"
+    },
+    {
+      "fieldname": "NAME2",
+      "type": "String",
+      "notes": "Name Field 2 (Company or Spouse)"
+    },
+    {
+      "fieldname": "NATIVE_NAME2",
+      "type": "String",
+      "notes": "Native Name 2"
+    },
+    {
+      "fieldname": "ADDR1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "ADDR2",
+      "type": "String",
+      "notes": "Apt or Suite #"
+    },
+    {
+      "fieldname": "ADDR3",
+      "type": "String",
+      "notes": "City, State Zip"
+    },
+    {
+      "fieldname": "CITY",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "STATE",
+      "type": "String",
+      "notes": "State"
+    },
+    {
+      "fieldname": "ZIP",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "COU",
+      "type": "String",
+      "notes": "Country (3 letter code)"
+    },
+    {
+      "fieldname": "PHN1",
+      "type": "Numeric",
+      "notes": "Phone Field"
+    },
+    {
+      "fieldname": "PHN2",
+      "type": "Numeric",
+      "notes": "Phone Field"
+    },
+    {
+      "fieldname": "PHN3",
+      "type": "Numeric",
+      "notes": "Phone Field"
+    },
+    {
+      "fieldname": "CELL_PHONE",
+      "type": "Numeric",
+      "notes": "Cell Phone"
+    },
+    {
+      "fieldname": "EMAIL",
+      "type": "String",
+      "notes": "Email Address"
+    },
+    {
+      "fieldname": "BANK_NAME",
+      "type": "String",
+      "notes": "Direct Deposit Bank Name"
+    },
+    {
+      "fieldname": "BANK_BRANCH",
+      "type": "String",
+      "notes": "Direct Deposit Branch Name"
+    },
+    {
+      "fieldname": "BANK_ROUTE",
+      "type": "Numeric",
+      "notes": "Direct Deposit Routing Number"
+    },
+    {
+      "fieldname": "BANK_ACCT",
+      "type": "Numeric",
+      "notes": "Direct Deposit Account Number"
+    },
+    {
+      "fieldname": "BANK_CHECK_NAME",
+      "type": "String",
+      "notes": "Direct Deposit Check Name"
+    },
+    {
+      "fieldname": "ACCT_TYPE",
+      "type": "String",
+      "notes": "Direct Deposit Account Type"
+    },
+    {
+      "fieldname": "BANK_NUMBER",
+      "type": "Numeric",
+      "notes": "Direct Deposit Bank Number"
+    },
+    {
+      "fieldname": "BRANCH_NUMBER",
+      "type": "Numeric",
+      "notes": "Direct Deposit Branch Number"
+    },
+    {
+      "fieldname": "BIRTH_DATE",
+      "type": "Date",
+      "notes": "Birth Date (YYYYMMDD)"
+    },
+    {
+      "fieldname": "SHP_ADR1",
+      "type": "String",
+      "notes": "Ship To Address Line 1"
+    },
+    {
+      "fieldname": "SHP_ADR2",
+      "type": "String",
+      "notes": "Ship To Address Line 2"
+    },
+    {
+      "fieldname": "SHP_ADR3",
+      "type": "String",
+      "notes": "Ship To Address Line 3"
+    },
+    {
+      "fieldname": "SHP_CITY",
+      "type": "String",
+      "notes": "Ship To City"
+    },
+    {
+      "fieldname": "SHP_ST",
+      "type": "String",
+      "notes": "Ship To State"
+    },
+    {
+      "fieldname": "SHP_ZIP",
+      "type": "String",
+      "notes": "Ship To Zip"
+    },
+    {
+      "fieldname": "SHP_COU",
+      "type": "String",
+      "notes": "Ship To Country"
+    },
+    {
+      "fieldname": "LANGUAGE",
+      "type": "String",
+      "notes": "3 Letter Language Code"
+    },
+    {
+      "fieldname": "RECOGNITION_NAME",
+      "type": "String",
+      "notes": "Recognition Name"
+    },
+    {
+      "fieldname": "FLAG_1",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_2",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_3",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_4",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_5",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_6",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_7",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_8",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_9",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_10",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_11",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_12",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_13",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_14",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_15",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_16",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_17",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_18",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_19",
+      "type": "String",
+      "notes": "Flag Field"
+    },
+    {
+      "fieldname": "FLAG_20",
+      "type": "String",
+      "notes": "Flag Field"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful "
+    }
+  ]
+}

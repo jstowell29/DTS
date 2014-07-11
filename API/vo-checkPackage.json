@@ -1,0 +1,29 @@
+{
+  "id": "vo-checkPackage",
+  "name": "Vo.checkPackage",
+  "description": "Check a users Evo package ID",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    },
+    {
+      "fieldname": "packageId",
+      "type": "Numeric",
+      "notes": "Package ID Number"
+    },
+    {
+      "fieldname": "packageDescription",
+      "type": "String",
+      "notes": "Package Description"
+    }
+  ]
+}

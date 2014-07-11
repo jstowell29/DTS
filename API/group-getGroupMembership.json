@@ -1,0 +1,29 @@
+{
+  "id": "group-getGroupMembership",
+  "name": "Group.getGroupMembership",
+  "description": "List Downline Ids group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is No."
+    },
+    {
+      "fieldname": "distIdGroup",
+      "type": "String",
+      "notes": "Id to find in groups"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "groups",
+      "type": "Array",
+      "notes": "List of the specified IDs in the group"
+    }
+  ]
+}

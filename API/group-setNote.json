@@ -1,0 +1,59 @@
+{
+  "id": "group-setNote",
+  "name": "Group.setNote",
+  "description": "Set or save a prospect",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "distIdNote",
+      "type": "String",
+      "notes": "Distributor Id that has a note attached"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Used for prospects (i.e. id=Gx), the group to which the Gx ID belongs;must be used with prospects"
+    },
+    {
+      "fieldname": "note",
+      "type": "String",
+      "notes": "Note text"
+    },
+    {
+      "fieldname": "noteId",
+      "type": "String",
+      "notes": "Note Id, if you have it, for overwrite"
+    },
+    {
+      "fieldname": "NoteStatus",
+      "type": "String",
+      "notes": "Open or Closed"
+    },
+    {
+      "fieldname": "due",
+      "type": "Numeric",
+      "notes": "The date this is due CCYYMMDD"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "desc",
+      "type": "String",
+      "notes": "Description of return message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

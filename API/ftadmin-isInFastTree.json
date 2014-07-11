@@ -1,0 +1,39 @@
+{
+  "id": "ftAdmin-isInFastTree",
+  "name": "FtAdmin.isInFastTree",
+  "description": "Returns information if person is in a fasttree file or not",
+  "inputs": [
+    {
+      "fieldname": "fileList",
+      "type": "String",
+      "notes": "FastTree File Name ($CURR, TRDSTGEN, TRPB201305, etc) This list can be comma separated"
+    },
+    {
+      "fieldname": "targetDistId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "detail",
+      "type": "String",
+      "notes": "Whether or not person was found"
+    },
+    {
+      "fieldname": "fileName",
+      "type": "String",
+      "notes": "FastTree file name where person was found"
+    },
+    {
+      "fieldname": "found",
+      "type": "Numeric",
+      "notes": "Count of how many were found"
+    },
+    {
+      "fieldname": "id",
+      "type": "Numeric",
+      "notes": "ID of person found"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "group-getNote",
+  "name": "Group.getNote",
+  "description": "Get note for Id",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is No."
+    },
+    {
+      "fieldname": "distIdnote",
+      "type": "String",
+      "notes": "Distributor ID that has a note attached"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Only applies when setNote used group."
+    },
+    {
+      "fieldname": "noteId",
+      "type": "String",
+      "notes": "Note ID.  If absent, get all distIdNote"
+    },
+    {
+      "fieldname": "filterStatus",
+      "type": "String",
+      "notes": "Filter on status"
+    },
+    {
+      "fieldname": "filterText",
+      "type": "String",
+      "notes": "Filter based on text in the note"
+    },
+    {
+      "fieldname": "filterCreateStart",
+      "type": "Numeric",
+      "notes": "Filter on create date >= this date"
+    },
+    {
+      "fieldname": "filterCreateEnd",
+      "type": "Numeric",
+      "notes": "Filter on create date <= this date"
+    },
+    {
+      "fieldname": "filterDueStart",
+      "type": "Numeric",
+      "notes": "Filter on due date >= this date"
+    },
+    {
+      "fieldname": "filterDueEnd",
+      "type": "Numeric",
+      "notes": "Filter on due date <= this date"
+    },
+    {
+      "fieldname": "filterName",
+      "type": "String",
+      "notes": "Filter on distributor name."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "create",
+      "type": "Numeric",
+      "notes": "Date created"
+    },
+    {
+      "fieldname": "distIdNote",
+      "type": "Numeric",
+      "notes": "Dist ID of note owner"
+    },
+    {
+      "fieldname": "distNameNote",
+      "type": "String",
+      "notes": "Name on Nate"
+    },
+    {
+      "fieldname": "due",
+      "type": "Numeric",
+      "notes": "Due date of note"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Group note is part of"
+    },
+    {
+      "fieldname": "note",
+      "type": "String",
+      "notes": "Note Text"
+    },
+    {
+      "fieldname": "noteId",
+      "type": "String",
+      "notes": "Note ID"
+    },
+    {
+      "fieldname": "noteStatus",
+      "type": "String",
+      "notes": "Status of Note"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    },
+    {
+      "fieldname": "update",
+      "type": "Numeric",
+      "notes": "Date updated"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "SERVERVER": "9,0,1,274733",
+  "ROLES": "distributor",
+  "SERVERTYPE": "ACF",
+  "CLIENT": "DTSBase",
+  "LASTINITTIME": "June, 02 2014 10:07:33",
+  "REMOTE_ADDR": "205.241.27.27",
+  "LOGGEDIN": true,
+  "DTS_REV": "1.1.1.3679",
+  "HOST": "cw7.x.dts.myvoffice.com",
+  "MODULES": [],
+  "SERVERCFVER": 9,
+  "SESSION": "8430b5a9399b52628798706c427278511a43",
+  "DTS_PATH": "/atomicdev/dts/",
+  "USERNAME": "Benjamin, Alan",
+  "MAPPINGS": {
+    "DTSBase": "/mnt/cm/wwwfs/www/iact1/wwwroot/DTSBaseBEdev",
+    "coldbox": "/mnt/cm/wwwfs/www/iact1/wwwroot/coldbox380"
+  },
+  "CLIENTREV": "atomic",
+  "ENVIRONMENT": "dev",
+  "ACTUALSERVER": "cw7.infotraxsys.com\n",
+  "HTTPS": "",
+  "USERID": 1004.0,
+  "CB_REV": "3.8.0.00061"
+}

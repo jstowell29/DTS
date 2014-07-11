@@ -1,0 +1,58 @@
+{
+  "SUMMARY": {
+    "ROWCOUNT": 4,
+    "COLUMNS": [
+      "DIST_ID",
+      "NAME",
+      "PAID_RANK",
+      "END_RANK",
+      "HOME_PHONE",
+      "WORK_PHONE",
+      "FAX_PHONE"
+    ],
+    "DATA": {
+      "DIST_ID": [
+        1004,
+        1001,
+        3,
+        1
+      ],
+      "NAME": [
+        "Benjamin, Alan",
+        "Goodwin, Chasity",
+        "Atomic Health Force",
+        "Atomic Health Forces"
+      ],
+      "PAID_RANK": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "END_RANK": [
+        9,
+        11,
+        1,
+        1
+      ],
+      "HOME_PHONE": [
+        8635556554,
+        7005550358,
+        8015551234,
+        8015551234
+      ],
+      "WORK_PHONE": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "FAX_PHONE": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  }
+}

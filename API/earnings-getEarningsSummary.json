@@ -1,0 +1,119 @@
+{
+  "id": "earnings-getEarningsSummary",
+  "name": "Earnings.getEarningsSummary",
+  "description": "Provides a Summary of earnings based on date range",
+  "inputs": [
+    {
+      "fieldname": "periodType",
+      "type": "Numeric",
+      "notes": "PB, SB, etc."
+    },
+    {
+      "fieldname": "distId",
+      "type": "String",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "startDate",
+      "type": "Numeric",
+      "notes": "Beginning Date of Range (YYYYMMDD)"
+    },
+    {
+      "fieldname": "endDate",
+      "type": "Numeric",
+      "notes": "Ending Date of Range (YYYYMMDD)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "account_fees",
+      "type": "Numeric",
+      "notes": "Fees associated with earnings"
+    },
+    {
+      "fieldname": "check_amount",
+      "type": "Numeric",
+      "notes": "Check Amount"
+    },
+    {
+      "fieldname": "check_date",
+      "type": "Numeric",
+      "notes": "Check Date (YYYYMMDD)"
+    },
+    {
+      "fieldname": "clear_date",
+      "type": "Numeric",
+      "notes": "What type of check (PB, SB , etc)"
+    },
+    {
+      "fieldname": "conv_rate",
+      "type": "Numeric",
+      "notes": "Clear Date (YYYYMMDD)"
+    },
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "Currency Conversion Rate"
+    },
+    {
+      "fieldname": "currency_code",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "date_void",
+      "type": "Numeric",
+      "notes": "Void date if it exists"
+    },
+    {
+      "fieldname": "disbursement_type",
+      "type": "String",
+      "notes": "Disbursement Type for earnings"
+    },
+    {
+      "fieldname": "dist_bus_ctr",
+      "type": "Numeric",
+      "notes": "Distributor business center if applicable"
+    },
+    {
+      "fieldname": "earnings_amount",
+      "type": "Numeric",
+      "notes": "Earnings Amount"
+    },
+    {
+      "fieldname": "eft_date",
+      "type": "Numeric",
+      "notes": "EFT date if applicable"
+    },
+    {
+      "fieldname": "pv_date",
+      "type": "Numeric",
+      "notes": "PV Date for the earnings"
+    },
+    {
+      "fieldname": "reconcile_date",
+      "type": "Numeric",
+      "notes": "Bank Reconcile Date If Applicable"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Status"
+    },
+    {
+      "fieldname": "transaction_number",
+      "type": "Numeric",
+      "notes": "Earnings Transaction Number"
+    },
+    {
+      "fieldname": "transaction_seq",
+      "type": "Numeric",
+      "notes": "Earnings Transaction Sequence"
+    },
+    {
+      "fieldname": "withheld_amount",
+      "type": "Numeric",
+      "notes": "Amount Withheld on Earnings"
+    }
+  ]
+}

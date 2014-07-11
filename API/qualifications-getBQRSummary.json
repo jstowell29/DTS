@@ -1,0 +1,89 @@
+{
+  "id": "qualifications-getBQRSummary",
+  "name": "Qualifications.getBQRSummary",
+  "description": "Returns a summary of the numbers and ranks associated with qualifications",
+  "inputs": [
+    {
+      "fieldname": "distid",
+      "type": "Numeric",
+      "notes": "Distributor ID to return qualification data for"
+    },
+    {
+      "fieldname": "pvdate",
+      "type": "Numeric",
+      "notes": "The Volume Period that you want data for"
+    },
+    {
+      "fieldname": "bonustype",
+      "type": "String",
+      "notes": "Primary or Secondary bonus type.  PB, SB, or TB.  Default is PB."
+    },
+    {
+      "fieldname": "rankfield",
+      "type": "Numeric",
+      "notes": "PAID-RANK for Maitenance END-RANK for Promotion."
+    },
+    {
+      "fieldname": "ranksequence",
+      "type": "String",
+      "notes": "Rank Sequence.  Default is 0."
+    },
+    {
+      "fieldname": "businesscenter",
+      "type": "String",
+      "notes": "Business Center.  Default is 1."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "alternate",
+      "type": "Array",
+      "notes": "An array of alternate ranks"
+    },
+    {
+      "fieldname": "bqr_rankfield_value",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "columns",
+      "type": "Array",
+      "notes": "Rank qualification description for each field"
+    },
+    {
+      "fieldname": "currentValues",
+      "type": "Array",
+      "notes": "Values for qualifications for current period"
+    },
+    {
+      "fieldname": "decimals",
+      "type": "Array",
+      "notes": "Decimal values for each column"
+    },
+    {
+      "fieldname": "detail",
+      "type": "Array",
+      "notes": "A flag that specifies if the field has detail available or not"
+    },
+    {
+      "fieldname": "fieldnames",
+      "type": "Array",
+      "notes": "Field Names"
+    },
+    {
+      "fieldname": "group",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "lastPaidQuals",
+      "type": "Array",
+      "notes": "Previous periods qualification values"
+    },
+    {
+      "fieldname": "ranks",
+      "type": "Array",
+      "notes": "List of ranks"
+    }
+  ]
+}

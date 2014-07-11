@@ -1,0 +1,24 @@
+{
+  "id": "distributor-validate",
+  "name": "Distributor.validate",
+  "description": "Validates Distributor Information",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "DRF",
+      "type": "Boolean",
+      "notes": "True or False"
+    },
+    {
+      "fieldname": "DRF_ACCT",
+      "type": "Numeric",
+      "notes": "Encrypted Account Number"
+    }
+  ]
+}

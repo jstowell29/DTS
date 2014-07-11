@@ -1,0 +1,34 @@
+{
+  "id": "messagebox-archiveMessage",
+  "name": "MessageBox.archiveMessage",
+  "description": "Archives messages or a list of messages",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageIdList",
+      "type": "String",
+      "notes": "comma separated list of message ID's"
+    },
+    {
+      "fieldname": "whenCalled",
+      "type": "String",
+      "notes": "YYYYMMDDHHMMSS"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return PASS or FAIL"
+    }
+  ]
+}

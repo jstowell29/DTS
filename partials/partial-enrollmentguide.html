@@ -1,0 +1,37 @@
+<div class="col-md-10">
+	<h2>How to enroll a member with an initial order and autoship</h2>
+	<p>This guide will walk you through how to enroll a new person, place an order and create an autoship. This process assumes you are using protect pay as your payment processor.</p>
+	<hr>
+
+	<h3>Step 1: Session.login</h3>
+	
+	<p>First we will grab a session. This is done using session.login. A session is essential to make any subsequent calls.</p>
+
+	<p>Here is an example call:</p>
+	<pre>/get http://dts.myvoffice.com/clientname/dts/index.cfm?service=Session.login&apikey=***apikey_here&PASSWORD=***password_here***&USERID=***username_here***&format=JSON</pre>
+
+	<p>Output will look like this</p>
+		<pre>{
+	  "ROLES": "distributor",
+	  "SESSION": "8430b5a9399b52628798706c427278511a43"
+	}</pre>
+
+
+	<h3>Step 2: Orders.create (FUNCTION=PREORDER)</h3>
+
+	<p>Details on the input and output parameters for MessageBox.getMessageList can be found <a ui-sref="API.detail({serviceId: 'messagebox-getMessageListSummary'})">here</a>.</p>
+
+	<p>The output of the file will look like this.</p>
+
+</div>
+<div class="col-md-2">
+	<div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
+		<h5>Services Used</h5>
+		<ul class="">
+			<li><a ui-sref="API.detail({serviceId: 'session-login'})">Session.login</a></li>
+			<li>ProtectPay.getPayerInformation</li>
+			<li>Order.create</li>
+			<li>Distributor.create</li>
+		</ul>
+	</div>
+</div>

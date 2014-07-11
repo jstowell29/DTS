@@ -1,0 +1,19 @@
+{
+  "id": "dtparameters-getNextNumber",
+  "name": "DtParameters.getNextNumber",
+  "description": "Get Next Number For A Particular Entity",
+  "inputs": [
+    {
+      "fieldname": "prefixID",
+      "type": "String",
+      "notes": "File Prefix (must be all caps) (e.g. DIST, ODH)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "nxt_number",
+      "type": "Numeric",
+      "notes": "The next number that will be assigned"
+    }
+  ]
+}

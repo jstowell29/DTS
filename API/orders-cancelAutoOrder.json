@@ -1,0 +1,24 @@
+{
+  "id": "orders-cancelAutoOrder",
+  "name": "Orders.cancelAutoOrder",
+  "description": "Cancels an autoship template",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "odhNumber",
+      "type": "Numeric",
+      "notes": "Order Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Will return OK if successful"
+    }
+  ]
+}

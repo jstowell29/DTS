@@ -1,0 +1,49 @@
+{
+  "id": "qualifications-getBQRQuals",
+  "name": "Qualifications.getBQRQuals",
+  "description": "Returns Rank Qualifications Requirements",
+  "inputs": [
+    {
+      "fieldname": "distid",
+      "type": "Numeric",
+      "notes": "Distributor ID to return qualification data for"
+    },
+    {
+      "fieldname": "pvdate",
+      "type": "Numeric",
+      "notes": "The Volume Period that you want data for"
+    },
+    {
+      "fieldname": "bonustype",
+      "type": "String",
+      "notes": "Primary or Secondary bonus type.  PB, SB, or TB.  Default is PB."
+    },
+    {
+      "fieldname": "rankfield",
+      "type": "String",
+      "notes": "PAID-RANK for Maitenance END-RANK for Promotion."
+    },
+    {
+      "fieldname": "ranksequence",
+      "type": "String",
+      "notes": "Rank Sequence.  Default is 0."
+    },
+    {
+      "fieldname": "businesscenter",
+      "type": "String",
+      "notes": "Business Center.  Default is 1."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "currentValues",
+      "type": "Array",
+      "notes": "Current values for specified period and distributor"
+    },
+    {
+      "fieldname": "rows",
+      "type": "Array",
+      "notes": "Returns qualifications for each rank"
+    }
+  ]
+}

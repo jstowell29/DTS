@@ -1,0 +1,40 @@
+{
+  "id": "distributor-getPhoto",
+  "name": "Distributor.getPhoto",
+  "description": "Returns URL for photo of member.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    },
+    {
+      "fieldname": "size",
+      "type": "String",
+      "notes": "This will accept a value like 24x24"
+    },
+    {
+      "fieldname": "width",
+      "type": "Numeric",
+      "notes": "Numerical value for width"
+    },
+    {
+      "fieldname": "height",
+      "type": "Numeric",
+      "notes": "Numerical value for height"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "detail",
+      "type": "String",
+      "notes": "URL of image"
+    },
+    {
+      "fieldname": "message",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

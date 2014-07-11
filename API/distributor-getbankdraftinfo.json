@@ -1,0 +1,59 @@
+{
+  "id": "distributor-getbankdraftinfo",
+  "name": "Distributor.getbankdraftinfo",
+  "description": "Returns Bank Draft Information",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "ACCOUNT_NUMBER",
+      "type": "Numeric",
+      "notes": "Account Number Is Encoded"
+    },
+    {
+      "fieldname": "BANK_BRANCH",
+      "type": "String",
+      "notes": "Branch Name"
+    },
+    {
+      "fieldname": "BANK_NAME",
+      "type": "String",
+      "notes": "Bank Name"
+    },
+    {
+      "fieldname": "BANK_NUMBER",
+      "type": "Numeric",
+      "notes": "Bank Number"
+    },
+    {
+      "fieldname": "BRANCH_NUMBER",
+      "type": "Numeric",
+      "notes": "Branch Number"
+    },
+    {
+      "fieldname": "CHECK_NAME",
+      "type": "String",
+      "notes": "Name on the check"
+    },
+    {
+      "fieldname": "DIST_ID",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "DIST_SEQ",
+      "type": "Numeric",
+      "notes": "Sequence for multiple bank drafts"
+    },
+    {
+      "fieldname": "TRANSIT",
+      "type": "Numeric",
+      "notes": ""
+    }
+  ]
+}

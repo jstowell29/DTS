@@ -1,0 +1,59 @@
+{
+  "id": "distributor-getNotify",
+  "name": "Distributor.getNotify",
+  "description": "Returns notifications set up for a user. Notifications will send a text message or email stating a message has been received.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "data",
+      "type": "String",
+      "notes": "information about how to notify person (email address, txt address, etc)"
+    },
+    {
+      "fieldname": "date",
+      "type": "Numeric",
+      "notes": "date created"
+    },
+    {
+      "fieldname": "freq",
+      "type": "Numeric",
+      "notes": "frequency of notification"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of notification"
+    },
+    {
+      "fieldname": "order",
+      "type": "Numeric",
+      "notes": "Order in which to send notification (like a sequence number)"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Whether active or inactive"
+    },
+    {
+      "fieldname": "stop",
+      "type": "String",
+      "notes": "Notify stopped or not"
+    },
+    {
+      "fieldname": "type",
+      "type": "String",
+      "notes": "Type of notification"
+    }
+  ]
+}

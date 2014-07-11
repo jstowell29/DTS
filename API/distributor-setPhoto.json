@@ -1,0 +1,39 @@
+{
+  "id": "distributor-setPhoto",
+  "name": "Distributor.setPhoto",
+  "description": "Sets Evo Profile Photo",
+  "inputs": [
+    {
+      "fieldname": "DISTID",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "SOURCE",
+      "type": "String",
+      "notes": "FastTree field name to search on"
+    },
+    {
+      "fieldname": "SIZE",
+      "type": "String",
+      "notes": "Size OR WIDTH and HEIGHT should be specified not both("
+    },
+    {
+      "fieldname": "WIDTH",
+      "type": "Numeric",
+      "notes": "Set Width of the Image"
+    },
+    {
+      "fieldname": "HEIGHT",
+      "type": "Numeric",
+      "notes": "Set Height of the Image"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

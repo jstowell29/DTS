@@ -1,0 +1,39 @@
+{
+  "id": "messagebox-setMessageStatus",
+  "name": "MessageBox.setMessageStatus",
+  "description": "Set status of a message (read, unread, etc)",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "messageId",
+      "type": "Numeric",
+      "notes": "ID of Message"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Read"
+    },
+    {
+      "fieldname": "attachmentId",
+      "type": "Numeric",
+      "notes": "Message ID that is attached"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS"
+    }
+  ]
+}

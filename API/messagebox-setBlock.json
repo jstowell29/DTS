@@ -1,0 +1,59 @@
+{
+  "id": "messagebox-setBlock",
+  "name": "MessageBox.setBlock",
+  "description": "Set member list of allows and blocks for a user.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "block",
+      "type": "String",
+      "notes": "List of IDs of who to block (comma separated)"
+    },
+    {
+      "fieldname": "allow",
+      "type": "String",
+      "notes": "List of IDs to allow, comma separated"
+    },
+    {
+      "fieldname": "delete",
+      "type": "String",
+      "notes": "List of IDs to remove from the whitelist and blacklist"
+    },
+    {
+      "fieldname": "flag20",
+      "type": "String",
+      "notes": "Allow upline broadcast ~@~ is the default value"
+    },
+    {
+      "fieldname": "flag12",
+      "type": "String",
+      "notes": "Allow upline broadcast to users downline"
+    },
+    {
+      "fieldname": "flag19",
+      "type": "String",
+      "notes": "Allow corp to broadcast to user"
+    },
+    {
+      "fieldname": "flag5",
+      "type": "String",
+      "notes": "Allow promo to broadcast to user"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "messagebox-getBlock",
+  "name": "MessageBox.getBlock",
+  "description": "Returns a list of blocked downline users for a specified user",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "bId",
+      "type": "Numeric",
+      "notes": "Single ID with rules applying to distId"
+    },
+    {
+      "fieldname": "mode",
+      "type": "String",
+      "notes": "Blocks, Allows, Flags"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "dist-id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "mode",
+      "type": "String",
+      "notes": "Block or Allow"
+    },
+    {
+      "fieldname": "Flags",
+      "type": "Array",
+      "notes": "Returns an Array of Blocks, Allows, Flags"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of flag"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": "Value of flag"
+    }
+  ]
+}

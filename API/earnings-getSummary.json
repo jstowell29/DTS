@@ -1,0 +1,64 @@
+{
+  "id": "earnings-getSummary",
+  "name": "Earnings.getSummary",
+  "description": "Returns Any Array Of Commission Field Information By Period",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "Volume Period (Format: YYYYMM)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bqf_period_type",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "bqf_pv_date",
+      "type": "Numeric",
+      "notes": "Volume Period (Format: YYYYMM)"
+    },
+    {
+      "fieldname": "ARRAY",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "bqf_detail_available_f",
+      "type": "String",
+      "notes": "T or Null, if set to true it means details are available for this field"
+    },
+    {
+      "fieldname": "bqf_field_description",
+      "type": "String",
+      "notes": "Field Description"
+    },
+    {
+      "fieldname": "bqf_field_ name",
+      "type": "String",
+      "notes": "Field Name (vol1, end-rank, etc)"
+    },
+    {
+      "fieldname": "bqf_field_value",
+      "type": "Numeric",
+      "notes": "Amount"
+    },
+    {
+      "fieldname": "bqf_sort_sequence",
+      "type": "Numeric",
+      "notes": "Sequence if applicable"
+    },
+    {
+      "fieldname": "bqf_vo_display_f",
+      "type": "String",
+      "notes": "T or Null, if set to true means this field is displayable"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "distributor-changeStatus",
+  "name": "Distributor.changeStatus",
+  "description": "Change status of a member",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "true"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Reason the person was suspended",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

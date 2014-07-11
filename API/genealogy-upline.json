@@ -1,0 +1,34 @@
+{
+  "id": "genealogy-upline",
+  "name": "Genealogy.upline",
+  "description": "Runs a FastTree upline report",
+  "inputs": [
+    {
+      "fieldname": "file",
+      "type": "String",
+      "notes": "FastTree files comma separated. This will be the file used to run the upline report"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "distId2",
+      "type": "Numeric",
+      "notes": "Stop reading upline at this member"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "Limit the number of records to return"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "reportDetail",
+      "type": "String",
+      "notes": "This depends on the return fields requested in the report"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "group-getDefinition",
+  "name": "Group.getDefinition",
+  "description": "Get Group Definition or Definitions",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id or blank"
+    },
+    {
+      "fieldname": "getCount",
+      "type": "String",
+      "notes": "Return the record count?  Yes or No.  Default is no."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Group ID"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Group Name"
+    },
+    {
+      "fieldname": "photolink",
+      "type": "String",
+      "notes": "Link to Photo"
+    },
+    {
+      "fieldname": "photoname",
+      "type": "String",
+      "notes": "Photo Name"
+    },
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": "FastTree query associated with group"
+    },
+    {
+      "fieldname": "count",
+      "type": "Numeric",
+      "notes": "Number of people within the group"
+    }
+  ]
+}

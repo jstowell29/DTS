@@ -1,0 +1,104 @@
+{
+  "id": "messagebox-getIDList",
+  "name": "MessageBox.getIDList",
+  "description": "Returns list of users who were sent a particular message specified by ID",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No are valied values. Used to send corporate broadcast messages"
+    },
+    {
+      "fieldname": "listID",
+      "type": "Numeric",
+      "notes": "Message ID returned from setBroadcast"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "Limit how many records returned at a time"
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Start at a particular index of the returned results"
+    },
+    {
+      "fieldname": "filter",
+      "type": "String",
+      "notes": "Use "
+    },
+    {
+      "fieldname": "sortFields",
+      "type": "String",
+      "notes": "Fields to Sort On"
+    },
+    {
+      "fieldname": "sortDirections",
+      "type": "String",
+      "notes": "sort "
+    },
+    {
+      "fieldname": "sortTypes",
+      "type": "String",
+      "notes": "Specify if the sort field is Numeric ("
+    },
+    {
+      "fieldname": "searchField",
+      "type": "String",
+      "notes": "Use this field to perform a search. Example: name or dist-id"
+    },
+    {
+      "fieldname": "searchValue",
+      "type": "String",
+      "notes": "The term being searched for"
+    },
+    {
+      "fieldname": "searchStart",
+      "type": "String",
+      "notes": "Start searching at a certain record."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "cou",
+      "type": "String",
+      "notes": "Country code"
+    },
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "email",
+      "type": "String",
+      "notes": "Email Address"
+    },
+    {
+      "fieldname": "flag_19",
+      "type": "String",
+      "notes": "Block flag 19 information"
+    },
+    {
+      "fieldname": "flag_20",
+      "type": "String",
+      "notes": "Block flag 20 information"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of person"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Status of message"
+    }
+  ]
+}

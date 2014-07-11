@@ -1,0 +1,119 @@
+{
+  "id": "orders-getProductList",
+  "name": "Orders.getProductList",
+  "description": "Returns list of Products and Price Levels",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "warehouse",
+      "type": "Numeric",
+      "notes": "Order Number"
+    },
+    {
+      "fieldname": "countryCode",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "priceLevel",
+      "type": "Numeric",
+      "notes": "Price level to return"
+    },
+    {
+      "fieldname": "itemCode",
+      "type": "String",
+      "notes": "Item Code information to return"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "Number to limit the number of records returned"
+    },
+    {
+      "fieldname": "all",
+      "type": "String",
+      "notes": "Y or N. If "
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "category",
+      "type": "Numeric",
+      "notes": "Category Item Is located in"
+    },
+    {
+      "fieldname": "description",
+      "type": "String",
+      "notes": "Description of item"
+    },
+    {
+      "fieldname": "inStock",
+      "type": "String",
+      "notes": "Y or N if item is in stock"
+    },
+    {
+      "fieldname": "itemCode",
+      "type": "String",
+      "notes": "SKU Number"
+    },
+    {
+      "fieldname": "itemName1",
+      "type": "String",
+      "notes": "Item Name 1"
+    },
+    {
+      "fieldname": "itemName2",
+      "type": "String",
+      "notes": "Item Name 2"
+    },
+    {
+      "fieldname": "price1",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price2",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price3",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price4",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price5",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price6",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price7",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "price8",
+      "type": "Numeric",
+      "notes": "Price Field"
+    },
+    {
+      "fieldname": "weight",
+      "type": "Numeric",
+      "notes": "Weight of Item"
+    }
+  ]
+}

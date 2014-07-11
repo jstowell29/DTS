@@ -1,0 +1,74 @@
+{
+  "id": "qualifications-getBQDetail",
+  "name": "Qualifications.getBQDetail",
+  "description": "Returns detail qualification data based on a certain commission field.",
+  "inputs": [
+    {
+      "fieldname": "pvdate",
+      "type": "Numeric",
+      "notes": "The Volume Period that you want data for"
+    },
+    {
+      "fieldname": "fieldname",
+      "type": "String",
+      "notes": "DataField to show detail on"
+    },
+    {
+      "fieldname": "distid",
+      "type": "Numeric",
+      "notes": "Distributor ID to return qualification data for"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bqd_period_type",
+      "type": "String",
+      "notes": "PB for Primary, SB for Secondary, TB for Tertiary"
+    },
+    {
+      "fieldname": "bqd_pv_date",
+      "type": "Numeric",
+      "notes": "Volume Period"
+    },
+    {
+      "fieldname": "current",
+      "type": "Array",
+      "notes": "Array of details for current period"
+    },
+    {
+      "fieldname": "bqd_source_amount",
+      "type": "Numeric",
+      "notes": "Source contributing amount"
+    },
+    {
+      "fieldname": "bqd_source_dist_id",
+      "type": "Numeric",
+      "notes": "Source contributing distributor ID"
+    },
+    {
+      "fieldname": "bqd_source_level",
+      "type": "Numeric",
+      "notes": "Source Level"
+    },
+    {
+      "fieldname": "bqd_source_name",
+      "type": "String",
+      "notes": "Source contributing name"
+    },
+    {
+      "fieldname": "inBoth",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "source_dist_id",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "last",
+      "type": "Array",
+      "notes": "Array of details for previous period"
+    }
+  ]
+}

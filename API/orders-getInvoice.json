@@ -1,0 +1,645 @@
+{
+  "id": "orders-getInvoice",
+  "name": "Orders.getInvoice",
+  "description": "Returns invoice information for an order.",
+  "test":"test",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "odhNumber",
+      "type": "Numeric",
+      "notes": "Order Number"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns "
+    },
+    {
+      "fieldname": "DST_Addr",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "DST_Addr_2",
+      "type": "String",
+      "notes": "Apartment Number"
+    },
+    {
+      "fieldname": "DST_Addr_3",
+      "type": "String",
+      "notes": "City, State, and Zip"
+    },
+    {
+      "fieldname": "DST_Addr_4",
+      "type": "String",
+      "notes": "Misc Address Field"
+    },
+    {
+      "fieldname": "DST_Company_Def_ID",
+      "type": "Numeric",
+      "notes": "Company Alertnate ID"
+    },
+    {
+      "fieldname": "DST_Country_Code",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "DST_Display_Name_1",
+      "type": "String",
+      "notes": "Member name"
+    },
+    {
+      "fieldname": "DST_Display_Name_2",
+      "type": "String",
+      "notes": "Member name 2"
+    },
+    {
+      "fieldname": "DST_Home_Phone",
+      "type": "Numeric",
+      "notes": "Home phone number"
+    },
+    {
+      "fieldname": "DST_Native_Name_1",
+      "type": "String",
+      "notes": "Member native name"
+    },
+    {
+      "fieldname": "DST_Native_Name_2",
+      "type": "String",
+      "notes": "Member native name 2"
+    },
+    {
+      "fieldname": "DST_Roman_Name_1",
+      "type": "String",
+      "notes": "Member Roman Name"
+    },
+    {
+      "fieldname": "DST_Roman_Name_2",
+      "type": "String",
+      "notes": "Member Roman Name"
+    },
+    {
+      "fieldname": "DST_email_addr",
+      "type": "String",
+      "notes": "Email address"
+    },
+    {
+      "fieldname": "Dist_Status",
+      "type": "String",
+      "notes": "Member status (D, C, P, etc)"
+    },
+    {
+      "fieldname": "Freight_Taxable",
+      "type": "Numeric",
+      "notes": "Flag to mark if freight was taxable"
+    },
+    {
+      "fieldname": "amount_received",
+      "type": "Numeric",
+      "notes": "Amount paid on the order"
+    },
+    {
+      "fieldname": "comment_1",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "comment_2",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "comment_3",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "comment_4",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "comment_5",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "comment_6",
+      "type": "String",
+      "notes": "Misc comment field"
+    },
+    {
+      "fieldname": "cou",
+      "type": "String",
+      "notes": "3 letter country code"
+    },
+    {
+      "fieldname": "currency",
+      "type": "String",
+      "notes": "3 letter currency code"
+    },
+    {
+      "fieldname": "cv_amount",
+      "type": "Numeric",
+      "notes": "commission volume amount"
+    },
+    {
+      "fieldname": "discount_amount",
+      "type": "Numeric",
+      "notes": "Discount Amount"
+    },
+    {
+      "fieldname": "discount_on",
+      "type": "Numeric",
+      "notes": "Amount the discount was applied to"
+    },
+    {
+      "fieldname": "discount_percent",
+      "type": "Numeric",
+      "notes": "Discount percentage"
+    },
+    {
+      "fieldname": "dist_id_number",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "dsc_amt",
+      "type": "Numeric",
+      "notes": ""
+    },
+    {
+      "fieldname": "errors",
+      "type": "String",
+      "notes": "Misc Error Field"
+    },
+    {
+      "fieldname": "flag_6",
+      "type": "String",
+      "notes": "Order flag 6 value"
+    },
+    {
+      "fieldname": "form_type",
+      "type": "String",
+      "notes": "Order type, "
+    },
+    {
+      "fieldname": "freight_amount",
+      "type": "Numeric",
+      "notes": "Shipping Amount"
+    },
+    {
+      "fieldname": "geo",
+      "type": "String",
+      "notes": "Geo Code"
+    },
+    {
+      "fieldname": "invoice_balance",
+      "type": "Numeric",
+      "notes": "Balance on the order"
+    },
+    {
+      "fieldname": "misc_charge_1",
+      "type": "Numeric",
+      "notes": "Misc Charge Field"
+    },
+    {
+      "fieldname": "misc_charge_2",
+      "type": "Numeric",
+      "notes": "Misc Charge Field"
+    },
+    {
+      "fieldname": "misc_charge_3",
+      "type": "Numeric",
+      "notes": "Misc Charge Field"
+    },
+    {
+      "fieldname": "misc_charge_4",
+      "type": "Numeric",
+      "notes": "Misc Charge Field"
+    },
+    {
+      "fieldname": "misc_charge_5",
+      "type": "Numeric",
+      "notes": "Misc Charge Field"
+    },
+    {
+      "fieldname": "misc_charges",
+      "type": "Numeric",
+      "notes": "Total misc charges"
+    },
+    {
+      "fieldname": "odh_number",
+      "type": "Numeric",
+      "notes": "Order Number"
+    },
+    {
+      "fieldname": "odl",
+      "type": "Array",
+      "notes": "Order lines, this amount will coincide with total number of lines on the order"
+    },
+    {
+      "fieldname": "ITU_Category",
+      "type": "String",
+      "notes": "Item Category"
+    },
+    {
+      "fieldname": "ITU_Sub_Category",
+      "type": "String",
+      "notes": "Item Sub Category"
+    },
+    {
+      "fieldname": "errln_flg",
+      "type": "String",
+      "notes": "Error Flag for order line"
+    },
+    {
+      "fieldname": "item_code",
+      "type": "String",
+      "notes": "Item SKU"
+    },
+    {
+      "fieldname": "item_name_1",
+      "type": "String",
+      "notes": "Item SKU Name 1"
+    },
+    {
+      "fieldname": "item_name_2",
+      "type": "String",
+      "notes": "Item SKU Name 2"
+    },
+    {
+      "fieldname": "kit_com_price",
+      "type": "Numeric",
+      "notes": "Kit Price"
+    },
+    {
+      "fieldname": "kit_flag",
+      "type": "String",
+      "notes": "Kit Flag (Marked if the item is a kit)"
+    },
+    {
+      "fieldname": "line_lock",
+      "type": "String",
+      "notes": "Flag to mark if the line is editable"
+    },
+    {
+      "fieldname": "plv",
+      "type": "Numeric",
+      "notes": "Price Level of the order line"
+    },
+    {
+      "fieldname": "price_2",
+      "type": "Numeric",
+      "notes": "PV Amount"
+    },
+    {
+      "fieldname": "price_6",
+      "type": "Numeric",
+      "notes": "Price 6 Amount"
+    },
+    {
+      "fieldname": "qty_bo_filled",
+      "type": "Numeric",
+      "notes": "Quantity of items on backorder"
+    },
+    {
+      "fieldname": "qty_ordered",
+      "type": "Numeric",
+      "notes": "Quantity of items ordered"
+    },
+    {
+      "fieldname": "qty_shipped",
+      "type": "Numeric",
+      "notes": "Quanity of items shipped"
+    },
+    {
+      "fieldname": "sales_price",
+      "type": "Numeric",
+      "notes": "Sales price of the line item"
+    },
+    {
+      "fieldname": "odp",
+      "type": "Array",
+      "notes": "Payment Array for number of payments on the order"
+    },
+    {
+      "fieldname": "Bill_Addr1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "Bill_Addr2",
+      "type": "String",
+      "notes": "Apartment Number"
+    },
+    {
+      "fieldname": "Bill_Addr3",
+      "type": "String",
+      "notes": "City, State, and Zip"
+    },
+    {
+      "fieldname": "Bill_City",
+      "type": "String",
+      "notes": "City"
+    },
+    {
+      "fieldname": "Bill_Country_Code",
+      "type": "String",
+      "notes": "3 Letter country code"
+    },
+    {
+      "fieldname": "Bill_Email",
+      "type": "String",
+      "notes": "Billing Email Address"
+    },
+    {
+      "fieldname": "Bill_First_Name",
+      "type": "String",
+      "notes": "Billing First Name"
+    },
+    {
+      "fieldname": "Bill_Last_Name",
+      "type": "String",
+      "notes": "Billing Last Name"
+    },
+    {
+      "fieldname": "Bill_Phone",
+      "type": "Numeric",
+      "notes": "Billing Phone"
+    },
+    {
+      "fieldname": "Bill_State",
+      "type": "String",
+      "notes": "State"
+    },
+    {
+      "fieldname": "Bill_Zip",
+      "type": "String",
+      "notes": "Postal Code"
+    },
+    {
+      "fieldname": "amount_recd",
+      "type": "Numeric",
+      "notes": "Amount Paid"
+    },
+    {
+      "fieldname": "cc_exp_mm",
+      "type": "Numeric",
+      "notes": "Credit Card Expiration Month (MM)"
+    },
+    {
+      "fieldname": "cc_exp_yy",
+      "type": "Numeric",
+      "notes": "Credit Card Expiration Year (YY)"
+    },
+    {
+      "fieldname": "cc_type",
+      "type": "String",
+      "notes": "Credit Card type (V for Visa, M for MasterCard, A for AMEX)"
+    },
+    {
+      "fieldname": "cc_type_desc",
+      "type": "Numeric",
+      "notes": "Full text of credit card type"
+    },
+    {
+      "fieldname": "check_cc_acct",
+      "type": "Numeric",
+      "notes": "Credit Card Number"
+    },
+    {
+      "fieldname": "name_on_card",
+      "type": "String",
+      "notes": "Name on Credit Card"
+    },
+    {
+      "fieldname": "pre_auth_transit",
+      "type": "String",
+      "notes": "Authorization Code"
+    },
+    {
+      "fieldname": "receipt_name",
+      "type": "String",
+      "notes": "Payment Name"
+    },
+    {
+      "fieldname": "receipt_type",
+      "type": "Numeric",
+      "notes": "Receipt Type"
+    },
+    {
+      "fieldname": "reference_num",
+      "type": "String",
+      "notes": "Payment Reference Number"
+    },
+    {
+      "fieldname": "ord_ent_dt",
+      "type": "Numeric",
+      "notes": "Order entered date"
+    },
+    {
+      "fieldname": "ord_ent_op",
+      "type": "String",
+      "notes": "Operator Initials"
+    },
+    {
+      "fieldname": "ord_ent_tm",
+      "type": "Numeric",
+      "notes": "Time of order was entered"
+    },
+    {
+      "fieldname": "ord_pst_dt",
+      "type": "Numeric",
+      "notes": "Order posted date"
+    },
+    {
+      "fieldname": "ord_shv_nm",
+      "type": "String",
+      "notes": "Ship Via Name"
+    },
+    {
+      "fieldname": "ord_whs_adr1",
+      "type": "String",
+      "notes": "Warehouse Street Address"
+    },
+    {
+      "fieldname": "ord_whs_adr2",
+      "type": "String",
+      "notes": "Warehouse Suite #"
+    },
+    {
+      "fieldname": "ord_whs_adr3",
+      "type": "String",
+      "notes": "Warehouse City, State, Zip"
+    },
+    {
+      "fieldname": "ord_whs_adr4",
+      "type": "String",
+      "notes": "Warehouse Misc Address"
+    },
+    {
+      "fieldname": "ord_whs_country_code",
+      "type": "String",
+      "notes": "Warehouse 3 Letter Country Code"
+    },
+    {
+      "fieldname": "ord_whs_nm1",
+      "type": "String",
+      "notes": "Warehouse DataTrax Sequence Number"
+    },
+    {
+      "fieldname": "ord_whs_st",
+      "type": "String",
+      "notes": "Warehouse State"
+    },
+    {
+      "fieldname": "ord_whs_zip",
+      "type": "String",
+      "notes": "Warehouse Postal Code"
+    },
+    {
+      "fieldname": "price_6",
+      "type": "Numeric",
+      "notes": "Price 6 Amount"
+    },
+    {
+      "fieldname": "price_lvl",
+      "type": "Numeric",
+      "notes": "Order Price Level"
+    },
+    {
+      "fieldname": "pv_amount",
+      "type": "Numeric",
+      "notes": "Order PV Amount"
+    },
+    {
+      "fieldname": "pv_mm",
+      "type": "Numeric",
+      "notes": "Volume Period"
+    },
+    {
+      "fieldname": "pv_yy",
+      "type": "Numeric",
+      "notes": "Volume Period Year"
+    },
+    {
+      "fieldname": "sales_amount",
+      "type": "Numeric",
+      "notes": "Order Sales Amount"
+    },
+    {
+      "fieldname": "sales_tax",
+      "type": "Numeric",
+      "notes": "Order Sales Tax Amount"
+    },
+    {
+      "fieldname": "ship_to_addr_1",
+      "type": "String",
+      "notes": "Ship To Street Address"
+    },
+    {
+      "fieldname": "ship_to_addr_2",
+      "type": "String",
+      "notes": "Ship To Apartment Number"
+    },
+    {
+      "fieldname": "ship_to_addr_3",
+      "type": "String",
+      "notes": "Ship To City, State, Zip"
+    },
+    {
+      "fieldname": "ship_to_addr_4",
+      "type": "String",
+      "notes": "Ship To Misc Address"
+    },
+    {
+      "fieldname": "ship_to_city",
+      "type": "String",
+      "notes": "Ship To City"
+    },
+    {
+      "fieldname": "ship_to_country",
+      "type": "String",
+      "notes": "Ship To Country"
+    },
+    {
+      "fieldname": "ship_to_email",
+      "type": "String",
+      "notes": "Ship To Email Address"
+    },
+    {
+      "fieldname": "ship_to_name",
+      "type": "String",
+      "notes": "Ship To Name"
+    },
+    {
+      "fieldname": "ship_to_phone",
+      "type": "Numeric",
+      "notes": "Ship To Phone"
+    },
+    {
+      "fieldname": "ship_to_spouse",
+      "type": "String",
+      "notes": "Ship To Spouse Name"
+    },
+    {
+      "fieldname": "ship_to_state",
+      "type": "String",
+      "notes": "Ship To State"
+    },
+    {
+      "fieldname": "ship_to_zip",
+      "type": "String",
+      "notes": "Ship To Postal Code"
+    },
+    {
+      "fieldname": "shv",
+      "type": "Numeric",
+      "notes": "Ship via number"
+    },
+    {
+      "fieldname": "shv_desc",
+      "type": "String",
+      "notes": "Ship Via Description"
+    },
+    {
+      "fieldname": "status",
+      "type": "Numeric",
+      "notes": "Order Status (1=Entered, 2=Paid, 3=Invoice, 4=Shipped, 5=Completed)"
+    },
+    {
+      "fieldname": "tax_percent",
+      "type": "Numeric",
+      "notes": "Order Tax Percentage"
+    },
+    {
+      "fieldname": "total_invoice_amt",
+      "type": "Numeric",
+      "notes": "Order Total Amount"
+    },
+    {
+      "fieldname": "total_taxable_amount",
+      "type": "Numeric",
+      "notes": "Order Total Tax Amount"
+    },
+    {
+      "fieldname": "trk_no",
+      "type": "String",
+      "notes": "Tracking Number"
+    },
+    {
+      "fieldname": "whs",
+      "type": "Numeric",
+      "notes": "DataTrax Warehouse Number"
+    }
+  ]
+}

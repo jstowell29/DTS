@@ -1,0 +1,34 @@
+{
+  "id": "genealogy-getFormattedFileNames",
+  "name": "Genealogy.getFormattedFileNames",
+  "description": "Returns FastTree file names. The files parameter is a pipe separated list of file aliases or names",
+  "inputs": [
+    {
+      "fieldname": "files",
+      "type": "String",
+      "notes": "pip separated list (example: $CURR|$CURR-1)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "exists",
+      "type": "Boolean",
+      "notes": "Returns true or false"
+    },
+    {
+      "fieldname": "file",
+      "type": "String",
+      "notes": "FastTree file name"
+    },
+    {
+      "fieldname": "period",
+      "type": "Numeric",
+      "notes": "Volume Period (YYYYMM)"
+    },
+    {
+      "fieldname": "periodType",
+      "type": "String",
+      "notes": "PB for primary bonus, SB for secondary bonus, TB for tertiary bonus"
+    }
+  ]
+}

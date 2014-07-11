@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>DTS Documentation</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- SmartAddon.com Verification -->
+    <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <!-- site css -->
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/bootflat.css">
+    <link rel="stylesheet" href="css/override.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+
+    
+    
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+   <!--  <script src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.2/typeahead.bundle.min.js"></script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script> 
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/override.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>  
+    <!-- <script src="js/uibreadcrumbs.js"></script> -->
+        
+    <script type="text/javascript" src="js/icheck.min.js"></script>
+
+    <script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    <body ng-app="dtsDocs">
+
+    
+<div class="wrap">
+    <nav class="navbar-default navbar-fixed-top navbar-custom main-header" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="home"><img src="img/InfoTrax-Logo.png" alt="InfoTrax">| DEVELOPER</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li ui-sref-active="active" class="item"><a ui-sref="API">API Docs</a></li>
+                    <li ui-sref-active="active" class="item"><a ui-sref="fasttree">FastTree</a></li>
+                    <!-- <li ui-sref-active="active" class="item"><a ui-sref="guides">Guides</a></li> -->
+                    <!-- <li class="disabled"><a href="#">Link</a></li> -->
+                    <li class="dropdown">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <!-- <li class="dropdown-header">Setting</li> -->
+                        <li><a ui-sref="started">Getting Started</a></li>
+                        <li><a ui-sref="guides.enrollment">Member Enrollment</a></li>
+                        <li><a ui-sref="guides.messaging">Messaging System</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <!-- <li class="divider"></li>
+                        <li class="active"><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li class="disabled"><a href="#">One more separated link</a></li> -->
+                      </ul>
+                    </li>
+                  </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-search search-only" ng-controller="TypeaheadCtrl">
+                      <i class="search-icon glyphicon glyphicon-search"></i>
+                      <!-- <input type="text" class="form-control search-query"> -->
+                      <input type="text" ng-model="selected" placeholder"Search DTS Docs" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control search-query">
+                  </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+<!-- MAIN CONTENT -->
+    <div ui-view autoscroll="false"></div>
+</div><!--End Wrap -->
+            <div class="footer">
+              <div class="container">
+                <div class="clearfix">
+                  <div class="footer-logo"><a href="#"><img src="img/InfoTrax-Logo.png" alt="InfoTrax"></a></div>
+                  <dl class="footer-nav">
+                    <dt class="nav-title">ABOUT</dt>
+                    <dd class="nav-item"><a href="#">The Company</a></dd>
+                    <dd class="nav-item"><a href="#">History</a></dd>
+                    <dd class="nav-item"><a href="#">Vision</a></dd>
+                  </dl>
+            </div>
+            <div class="footer-copyright text-center">Copyright &copy; 2014 InfoTrax Systems LLC. All rights reserved.</div>
+       
+     </body>
+</html>

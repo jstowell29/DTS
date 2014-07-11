@@ -1,0 +1,74 @@
+{
+  "id": "ftAdmin-getFileInfo",
+  "name": "ftAdmin.getFileInfo",
+  "description": "Returns All FastTree Files Available and their import times. If secondary and on are are imported into fasttree additional",
+  "inputs": [
+    {
+      "fieldname": "no input parameters",
+      "type": "NoInput",
+      "notes": "No Fields Required"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "bonus",
+      "type": "String",
+      "notes": "Field Alias"
+    },
+    {
+      "fieldname": "curr",
+      "type": "String",
+      "notes": "Current periods file name"
+    },
+    {
+      "fieldname": "files (Array)",
+      "type": "Array",
+      "notes": "This will list all files available within fasttree"
+    },
+    {
+      "fieldname": "File Name (Array)",
+      "type": "Array",
+      "notes": ""
+    },
+    {
+      "fieldname": "begin",
+      "type": "Numeric",
+      "notes": "Begin Date of the Period"
+    },
+    {
+      "fieldname": "end",
+      "type": "Numeric",
+      "notes": "End Date of the Period"
+    },
+    {
+      "fieldname": "import",
+      "type": "Date",
+      "notes": "Import Date Into FastTree"
+    },
+    {
+      "fieldname": "last",
+      "type": "String",
+      "notes": "Alias for last commission period"
+    },
+    {
+      "fieldname": "pBonus",
+      "type": "String",
+      "notes": "Primary bonus alias"
+    },
+    {
+      "fieldname": "pCurr",
+      "type": "String",
+      "notes": "Primary current commission period"
+    },
+    {
+      "fieldname": "pLast",
+      "type": "String",
+      "notes": "Primary last period"
+    },
+    {
+      "fieldname": "pPeriods",
+      "type": "String",
+      "notes": "Number of Primary Periods"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "session-logout",
+  "name": "Session.logout",
+  "description": "Used to destroy session",
+  "inputs": [
+    {
+      "fieldname": "noInput",
+      "type": "NoInput",
+      "notes": "Requires no additional input"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ]
+}

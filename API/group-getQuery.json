@@ -1,0 +1,29 @@
+{
+  "id": "group-getQuery",
+  "name": "Group.getQuery",
+  "description": "Returns the FastTree query associated with the group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id."
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "query",
+      "type": "String",
+      "notes": "FastTree query"
+    }
+  ]
+}

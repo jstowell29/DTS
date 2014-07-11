@@ -1,0 +1,29 @@
+{
+  "id": "genealogy-checkUplineDownline",
+  "name": "Genealogy.checkUplineDownline",
+  "description": "Checks if a person is in a members sponsor tree Upline, Downline or Not at all. Will return “Up”, “Down” or “No”",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "idList",
+      "type": "String",
+      "notes": "Comma separated list of member IDs to check"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "ID",
+      "type": "Numeric",
+      "notes": "Member ID Number"
+    },
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns if the person is in the Upline (Up), Downline (Down), or Not in the downline (No)"
+    }
+  ]
+}

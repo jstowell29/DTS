@@ -1,0 +1,80 @@
+{
+  "id": "group-getIds",
+  "name": "Group.getIds",
+  "description": "Get Ids in a group",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is no."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group Id",
+      "required": "true"
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Starting Index"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many results to return at a time."
+    },
+    {
+      "fieldname": "groupFilter",
+      "type": "String",
+      "notes": "Filter criteria (i.e. Cou=USA)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Distributor Name"
+    },
+    {
+      "fieldname": "new",
+      "type": "String",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "notes",
+      "type": "String",
+      "notes": "Set to "
+    },
+    {
+      "fieldname": "notetext",
+      "type": "String",
+      "notes": "Text of the note"
+    },
+    {
+      "fieldname": "paid_rank",
+      "type": "Numeric",
+      "notes": "Paid rank value"
+    },
+    {
+      "fieldname": "pflag",
+      "type": "String",
+      "notes": "Qualifying flag"
+    },
+    {
+      "fieldname": "vol1",
+      "type": "Numeric",
+      "notes": "Personal Volume Amount"
+    }
+  ]
+}

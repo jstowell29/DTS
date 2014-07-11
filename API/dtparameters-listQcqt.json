@@ -1,0 +1,24 @@
+{
+  "id": "dtparameters-listQcqt",
+  "name": "DtParameters.listQcqt",
+  "description": "list QCQT",
+  "inputs": [
+    {
+      "fieldname": "PeriodType",
+      "type": "String",
+      "notes": "Period Type (PB, SB, or TB)."
+    },
+    {
+      "fieldname": "Action_Id",
+      "type": "String",
+      "notes": "Action ID"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "NeedInfo",
+      "type": "NeedInfo",
+      "notes": "NeedInfo"
+    }
+  ]
+}

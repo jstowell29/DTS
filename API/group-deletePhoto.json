@@ -1,0 +1,29 @@
+{
+  "id": "group-deletePhoto",
+  "name": "Group.deletePhoto",
+  "description": "Delete a photo from available photos",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Is this a corporate Id?  Yes or no, default is no."
+    },
+    {
+      "fieldname": "photoId",
+      "type": "String",
+      "notes": "Photo Id"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "PASS or FAIL"
+    }
+  ]
+}

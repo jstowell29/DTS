@@ -1,0 +1,39 @@
+{
+  "id": "earnings-getPaidOnSummary",
+  "name": "Earnings.getPaidOnSummary",
+  "description": "Returns Summary By level of Commissions Payout",
+  "inputs": [
+    {
+      "fieldname": "periodType",
+      "type": "Numeric",
+      "notes": "Distributor ID Number"
+    },
+    {
+      "fieldname": "distId",
+      "type": "String",
+      "notes": "Period Type (PB, SB, etc."
+    },
+    {
+      "fieldname": "pvDate",
+      "type": "Numeric",
+      "notes": "Period Date"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "com_desc",
+      "type": "String",
+      "notes": "Description Of Bonus Type"
+    },
+    {
+      "fieldname": "converted_bonus",
+      "type": "Numeric",
+      "notes": "Converted Commission Amount"
+    },
+    {
+      "fieldname": "level",
+      "type": "Numeric",
+      "notes": "Level The Amount Came From In Persons Organization"
+    }
+  ]
+}

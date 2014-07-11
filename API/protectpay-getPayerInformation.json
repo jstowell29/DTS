@@ -1,0 +1,94 @@
+{
+  "id": "protectPay-getPayerInformation",
+  "name": "ProtectPay.getPayerInformation",
+  "description": "Retrieves ProtectPay Payer Information",
+  "inputs": [
+    {
+      "fieldname": "country_code",
+      "type": "String",
+      "notes": "3 Letter Country Code"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Users Name"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "dist_id",
+      "type": "Numeric",
+      "notes": "Distributor ID"
+    },
+    {
+      "fieldname": "payer_account_id",
+      "type": "Numeric",
+      "notes": "ProtectPay Payer Account ID"
+    },
+    {
+      "fieldname": "payments",
+      "type": "Array",
+      "notes": "Array of payments"
+    },
+    {
+      "fieldname": "odp_bill_addr1",
+      "type": "String",
+      "notes": "Street Address"
+    },
+    {
+      "fieldname": "odp_bill_addr2",
+      "type": "String",
+      "notes": "Suite or Apartment Number"
+    },
+    {
+      "fieldname": "odp_bill_addr3",
+      "type": "Boolean",
+      "notes": "City, State Zip"
+    },
+    {
+      "fieldname": "odp_bill_city",
+      "type": "String",
+      "notes": "Payment City"
+    },
+    {
+      "fieldname": "odp_bill_state",
+      "type": "String",
+      "notes": "Payment State"
+    },
+    {
+      "fieldname": "odp_bill_zip",
+      "type": "String",
+      "notes": "Payment Zip"
+    },
+    {
+      "fieldname": "odp_cc_exp",
+      "type": "Numeric",
+      "notes": "Expiration Date"
+    },
+    {
+      "fieldname": "odp_cc_name",
+      "type": "String",
+      "notes": "Payment Name"
+    },
+    {
+      "fieldname": "odp_cc_type",
+      "type": "String",
+      "notes": "Credit Card Type "
+    },
+    {
+      "fieldname": "odp_check_cc_account",
+      "type": "String",
+      "notes": "Masked Credit Card Number"
+    },
+    {
+      "fieldname": "odp_payment_token",
+      "type": "String",
+      "notes": "ProtectPay Payment Token"
+    }
+  ]
+}

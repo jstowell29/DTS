@@ -1,0 +1,29 @@
+{
+  "id": "group-getName",
+  "name": "Group.getName",
+  "description": "Get name of groups",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor Id"
+    },
+    {
+      "fieldname": "isCorp",
+      "type": "String",
+      "notes": "Yes or No.  Default is No."
+    },
+    {
+      "fieldname": "groupId",
+      "type": "String",
+      "notes": "Group ID (without this it returns a list of all names)"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "name",
+      "type": "String",
+      "notes": "Name of specified group"
+    }
+  ]
+}

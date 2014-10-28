@@ -1,0 +1,27 @@
+{
+  "id": "autoship-getTemplate",
+  "name": "Autoship.getTemplate",
+  "description": "This service will retrieve autoship template information.",
+  "inputs": [
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Distributor ID Number",
+      "required": "false"
+    },
+    {
+      "fieldname": "odhnumber",
+      "type": "Numeric",
+      "notes": "Reason the person was suspended",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "status",
+      "type": "String",
+      "notes": "Returns OK if successful"
+    }
+  ],
+  "httpRequest": "http://dts.myvoffice.com/atomic/dts/index.cfm;jsessionid=xxxxxxxx?service=AutoShip.getTemplate&apikey=xxxxx&ODHNUMBER=3000&format=JSON"
+}

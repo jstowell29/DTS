@@ -16,7 +16,7 @@
     {
       "fieldname": "SIZE",
       "type": "String",
-      "notes": "Size OR WIDTH and HEIGHT should be specified not both("
+      "notes": "Size OR WIDTH and HEIGHT should be specified not both"
     },
     {
       "fieldname": "WIDTH",

@@ -1,0 +1,98 @@
+{
+  "id": "genealogy-genealogyDetailbySavedQuery",
+  "name": "Genealogy.genealogyDetailBySavedQuery",
+  "description": "Returns FastTree saved reports in line detail format.",
+  "httpRequest": "http://dts.myvoffice.com/atomicpre/dts/index.cfm;jsessionid=sessionNumber?service=Genealogy.genealogyDetailBySavedQuery&apikey=test&QRYID=Qry5&DISTID=1004&GROUP=MMSummary&START=0&FILEID=MT018449&LIMIT=100&format=JSON",
+  "inputs": [
+    {
+      "fieldname": "appname",
+      "type": "String",
+      "notes": "Query application name, default is GenQueries"
+    },
+    {
+      "fieldname": "distId",
+      "type": "Numeric",
+      "notes": "Member ID Number",
+      "required": "true"
+    },
+    {
+      "fieldname": "group",
+      "type": "String",
+      "notes": "Query group name",
+      "required": "true"
+    },
+    {
+      "fieldname": "qryId",
+      "type": "String",
+      "notes": "Report ID",
+      "required": "true"
+    },
+    {
+      "fieldname": "parms",
+      "type": "String",
+      "notes": "Additional FastTree parameters"
+    },
+    {
+      "fieldname": "value",
+      "type": "String",
+      "notes": ""
+    },
+    {
+      "fieldname": "start",
+      "type": "Numeric",
+      "notes": "Used for paging, which record to start from"
+    },
+    {
+      "fieldname": "limit",
+      "type": "Numeric",
+      "notes": "How many records to limit per page"
+    },
+    {
+      "fieldname": "filters",
+      "type": "String",
+      "notes": "FastTree filter criteria (example vol1>100)"
+    },
+    {
+      "fieldname": "sortFields",
+      "type": "String",
+      "notes": "Fields to sort on"
+    },
+    {
+      "fieldname": "sortDirections",
+      "type": "String",
+      "notes": "U for Up or D for Down. Sort the field ascending or descending."
+    },
+    {
+      "fieldname": "sortTypes",
+      "type": "String",
+      "notes": "What type of field is being sorted on (A) for Alpha or (N) for numeric"
+    },
+    {
+      "fieldname": "searchField",
+      "type": "String",
+      "notes": "Field to perform search on (example: name)"
+    },
+    {
+      "fieldname": "searchValue",
+      "type": "String",
+      "notes": "Search term (example: Infotrax* will return anyone starting with Infotrax)"
+    },
+    {
+      "fieldname": "searchStart",
+      "type": "String",
+      "notes": "which record to begin search on."
+    },
+    {
+      "fieldname": "fileID",
+      "type": "String",
+      "notes": "Temp file ID returned from genealogyBySavedQuery"
+    }
+  ],
+  "outputs": [
+    {
+      "fieldname": "reportDetail",
+      "type": "String",
+      "notes": "The fields returned will depend on the fields specified in the FastTree report"
+    }
+  ]
+}

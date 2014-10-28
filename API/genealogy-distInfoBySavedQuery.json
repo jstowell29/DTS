@@ -6,7 +6,8 @@
     {
       "fieldname": "distId",
       "type": "Numeric",
-      "notes": "Member ID Number"
+      "notes": "Member ID Number",
+      "required": "true"
     },
     {
       "fieldname": "appname",

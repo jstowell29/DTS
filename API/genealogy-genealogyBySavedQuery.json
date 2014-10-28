@@ -2,26 +2,30 @@
   "id": "genealogy-genealogyBySavedQuery",
   "name": "Genealogy.genealogyBySavedQuery",
   "description": "Returns FastTree saved reports in group and summary format.",
+  "httpRequest": "http://dts.myvoffice.com/atomicpre/dts/index.cfm;jsessionid=sessionNumber?service=Genealogy.genealogyBySavedQuery&apikey=test&DISTID=1004&CREATETEMPFILE=Yes&GROUP=MMSummary&format=JSON",
   "inputs": [
     {
       "fieldname": "appname",
       "type": "String",
-      "notes": "Query application name, default is DistInfo"
+      "notes": "Query application name, default is GenQueries"
     },
     {
       "fieldname": "distId",
       "type": "Numeric",
-      "notes": "Member ID Number"
+      "notes": "Member ID Number",
+      "required": "true"
     },
     {
       "fieldname": "group",
       "type": "String",
-      "notes": "Query group name, default is DistInfo"
+      "notes": "Query group name",
+      "required": "true"
     },
     {
       "fieldname": "qryId",
       "type": "String",
-      "notes": "Report ID, default is PerInfo"
+      "notes": "Report ID",
+      "required": "true"
     },
     {
       "fieldname": "parms",
@@ -36,27 +40,12 @@
     {
       "fieldname": "sortedArray",
       "type": "Boolean",
-      "notes": ""
+      "notes": "Yes or no to return results in a sorted array"
     },
     {
       "fieldname": "filters",
       "type": "String",
-      "notes": ""
-    },
-    {
-      "fieldname": "sortFields",
-      "type": "String",
-      "notes": ""
-    },
-    {
-      "fieldname": "sortDirections",
-      "type": "String",
-      "notes": ""
-    },
-    {
-      "fieldname": "sortTypes",
-      "type": "String",
-      "notes": ""
+      "notes": "Additional filters to be added to report"
     },
     {
       "fieldname": "createTempFile",
